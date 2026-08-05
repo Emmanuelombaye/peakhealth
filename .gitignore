@@ -1,0 +1,8 @@
+__pycache__/
+*.pyc
+_tmp/
+template-home.html
+peakbody-home.html
+.DS_Store
+assets/source/
+*.log

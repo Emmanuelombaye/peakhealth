@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Checkout – PeakBody</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="icon" href="assets/brand/peakbody-mark.png">
+</head>
+<body>
+  <header data-header="shop"></header>
+  <div class="page-hero"><div class="container"><h1>Checkout</h1></div></div>
+  <section class="section">
+    <div class="container cart-layout">
+      <form id="checkout-form" class="panel">
+        <h3>Shipping details</h3>
+        <label>Full name</label>
+        <input required name="name">
+        <label>Email</label>
+        <input required type="email" name="email">
+        <label>Address</label>
+        <input required name="address">
+        <label>City</label>
+        <input required name="city">
+        <label>ZIP / Postal code</label>
+        <input required name="zip">
+        <button class="btn" type="submit">Place order</button>
+      </form>
+      <aside class="panel">
+        <h3>Your order</h3>
+        <div id="checkout-summary"></div>
+      </aside>
+    </div>
+  </section>
+  <footer data-footer></footer>
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
