@@ -67,10 +67,16 @@
   }
 
   function href(path) {
-    if (location.pathname.includes("/products/") || location.pathname.includes("/blog/")) {
-      return `../${path}`;
+    if (!path) return path;
+    let target = path;
+    if (location.protocol !== "file:") {
+      if (target === "index.html") target = "./";
+      else if (target.endsWith(".html")) target = target.slice(0, -5);
     }
-    return path;
+    if (location.pathname.includes("/products/") || location.pathname.includes("/blog/")) {
+      return target === "./" ? "../" : `../${target}`;
+    }
+    return target;
   }
 
   function headerHTML(active) {
