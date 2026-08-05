@@ -340,7 +340,7 @@ PB.testimonials = [
 ];
 
 PB.team = [
-  { name: "Dr. Amanda Gern", role: "Lead Peptide Biochemist", image: "assets/lifestyle/5.jpeg" },
-  { name: "Dr. Heather Jan", role: "Director of Quality Control", image: "assets/lifestyle/6.jpeg" },
-  { name: "Dr. Sandy Pip", role: "Analytical Synthesis Lead", image: "assets/lifestyle/17.jpeg" },
+  { name: "Dr. Amanda Gern", role: "Lead Peptide Biochemist", image: "assets/lifestyle/team-amanda.jpeg" },
+  { name: "Dr. Heather Jan", role: "Director of Quality Control", image: "assets/lifestyle/team-heather.jpeg" },
+  { name: "Dr. Sandy Pip", role: "Analytical Synthesis Lead", image: "assets/lifestyle/team-sandy.jpeg" },
 ];
