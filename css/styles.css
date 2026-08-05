@@ -266,7 +266,8 @@ body.is-home .site-header.scrolled {
 }
 .product-grid.cols-3 { grid-template-columns: repeat(3, 1fr); }
 .product-card .thumb {
-  background: #111;
+  background: #ffffff;
+  border: 1px solid var(--line);
   aspect-ratio: 5 / 6;
   overflow: hidden;
   margin-bottom: 16px;
@@ -276,7 +277,8 @@ body.is-home .site-header.scrolled {
 .product-card img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
+  padding: 12px;
   transition: transform .7s cubic-bezier(.22, .61, .36, 1);
 }
 .product-card:hover img { transform: scale(1.08); }
@@ -611,8 +613,38 @@ textarea { min-height: 140px; resize: vertical; }
     align-items: flex-start;
   }
   .menu-toggle { display: inline-flex; }
-  .product-grid, .product-grid.cols-3, .testimonials, .blog-grid, .team-grid, .stats-row, .ig-grid { grid-template-columns: 1fr 1fr; }
-  .hero { min-height: 620px; }
+  .hero {
+    min-height: 540px;
+    background-position: right center;
+  }
+  .hero::after {
+    background: linear-gradient(180deg, rgba(248,243,235,0.96) 0%, rgba(248,243,235,0.88) 55%, rgba(248,243,235,0.5) 100%);
+  }
+  .hero-copy {
+    padding: 60px 0 40px;
+    max-width: 100%;
+  }
+  .hero h1 {
+    font-size: clamp(36px, 8.5vw, 54px);
+  }
+  .hero .sub {
+    font-size: clamp(18px, 4.5vw, 24px);
+    margin: 8px 0 20px;
+  }
+  .product-grid, .product-grid.cols-3, .testimonials, .blog-grid, .stats-row { grid-template-columns: 1fr 1fr; gap: 16px 12px; }
+  .team-grid { grid-template-columns: 1fr; max-width: 380px; margin-left: auto; margin-right: auto; }
+  .ig-grid { grid-template-columns: repeat(3, 1fr); gap: 8px; }
   .feature-band .copy { padding: 40px 24px; }
   .cart-row { grid-template-columns: 72px 1fr; }
+  .about-visual img.main { height: 380px; }
+  .product-layout { grid-template-columns: 1fr; gap: 24px; padding-top: 24px; }
+}
+
+@media (max-width: 480px) {
+  .container { width: calc(100% - 24px); }
+  .product-grid, .product-grid.cols-3 { grid-template-columns: repeat(2, 1fr); gap: 12px 8px; }
+  .product-card .thumb { padding: 6px; }
+  .product-card h3 { font-size: 15px; }
+  .btn, .add-btn { padding: 11px 16px; font-size: 11px; }
+  .ig-grid { grid-template-columns: repeat(2, 1fr); gap: 6px; }
 }
