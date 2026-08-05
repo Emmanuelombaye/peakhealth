@@ -103,7 +103,7 @@
           <a class="brand" href="${href("index.html")}">
             <img src="${asset("assets/brand/peakbody-logo.png")}" alt="PeakBody" style="height:72px">
           </a>
-          <p style="margin-top:16px">Clean beauty essentials from PeakBody — thoughtful formulas for healthy-looking, comfortable skin. Tempe, AZ since 1998.</p>
+          <p style="margin-top:16px">Ultra-high purity HPLC-tested research peptides from PeakBody — precision formulations engineered for laboratory analytical standards.</p>
         </div>
         <div>
           <h6>Company</h6>

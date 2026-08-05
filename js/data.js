@@ -290,57 +290,57 @@ PB.products = [
 
 PB.posts = [
   {
-    slug: "lightweight-serum",
-    title: "What Makes a Serum Feel Lightweight?",
+    slug: "hplc-purity-testing",
+    title: "Understanding HPLC Purity & Mass Spectrometry in Peptide Research",
     date: "April 22, 2026",
     image: "assets/lifestyle/12.jpeg",
     excerpt:
-      "A lightweight serum absorbs quickly, layers easily, and helps the skin feel hydrated, refreshed, and comfortable.",
-    body: "The best everyday serums disappear into skin within seconds. PeakBody formulas are built with clean, fluid textures so hydration feels immediate — never sticky. Apply to damp skin, then seal with moisturizer for a simple two-step glow.",
+      "High-Performance Liquid Chromatography (HPLC) and Mass Spectrometry ensure >99% structural purity and exact molecular weight verification.",
+    body: "In laboratory research, analytical precision is paramount. PeakBody Peptides utilizes rigorous reverse-phase HPLC with UV detection alongside ESI-MS mass spectrometry to confirm identity, sequence, and purity. Every batch is supplied with an independent 3rd-Party Certificate of Analysis.",
   },
   {
-    slug: "naturally-inspired",
-    title: "How to Care for Skin with Naturally Inspired Products",
+    slug: "lyophilization-stability",
+    title: "Lyophilization & Vacuum Cold Storage for Long-Term Stability",
     date: "April 24, 2026",
     image: "assets/lifestyle/13.jpeg",
     excerpt:
-      "Discover how organic-inspired skincare can help nourish, hydrate, and support a naturally healthy-looking glow.",
-    body: "Naturally inspired care is about balance: gentle cleansing, consistent hydration, and ingredients your skin recognizes. PeakBody focuses on textures that feel modern and reliable, so self-care stays simple.",
+      "Lyophilized peptide vials maintain structural integrity and shelf life when stored under temperature-controlled laboratory conditions.",
+    body: "Freeze-drying removes moisture while retaining peptide bioactivity. Stored at -20°C in light-shielded, vacuum-sealed glass vials, PeakBody research peptides demonstrate 36-month stability without degradation.",
   },
   {
-    slug: "key-ingredients",
-    title: "Key Ingredients Commonly Used in Skincare",
+    slug: "receptor-pathway-research",
+    title: "Key Research Pathways: GLP-1, GIP & Multi-Agonist Peptides",
     date: "April 23, 2026",
     image: "assets/lifestyle/3.jpeg",
     excerpt:
-      "Learn about common cosmetic ingredients and how they help support hydration, comfort, and a better skincare experience.",
-    body: "Hydrators, antioxidants, and comforting botanicals are the backbone of clean beauty. Used consistently, they help skin feel softer, look fresher, and stay comfortable through changing seasons.",
+      "Exploring metabolic pathways, receptor affinity, and cellular growth mechanisms in modern peptide synthesis.",
+    body: "Advanced dual and triple agonist research compounds engage distinct receptor families to modulate metabolic signaling, glucose homeostasis, and tissue repair pathways. Analytical purity ensures reproducible experimental data across in-vitro models.",
   },
 ];
 
 PB.testimonials = [
   {
-    name: "Gwen Tennison",
+    name: "Dr. Marcus Vance",
     quote:
-      "These skincare products feel gentle, luxurious, and easy to use every day. My skin looks softer, fresher, and more hydrated after adding them to my routine.",
+      "PeakBody Peptides provides unmatched analytical consistency. The HPLC batch reports and >99% purity levels make them our primary source for laboratory research.",
     image: "assets/lifestyle/home-test-01.jpg",
   },
   {
-    name: "Sophia Carter",
+    name: "Dr. Elena Rostova",
     quote:
-      "I love the lightweight textures and clean finish. The serum absorbs beautifully and layers well with my moisturizer. My skin feels fresh, smooth, and comfortable throughout the day.",
+      "Fast dispatch, vacuum-sealed packaging, and verified 3rd-party COAs. The stability and quality of these lyophilized vials exceed standard laboratory benchmarks.",
     image: "assets/lifestyle/home-test-03.jpg",
   },
   {
-    name: "Emily Parker",
+    name: "Dr. Jonathan Hayes",
     quote:
-      "The products make my daily skincare routine feel simple and relaxing. Everything looks elegant, feels fresh, and leaves my complexion naturally radiant.",
+      "The precision and reliability of PeakBody research formulations enable our team to generate consistent, reproducible experimental data without batch variance.",
     image: "assets/lifestyle/home-test-04.jpg",
   },
 ];
 
 PB.team = [
-  { name: "Amanda Gern", role: "Skincare Specialist", image: "assets/lifestyle/5.jpeg" },
-  { name: "Heather Jan", role: "Skincare Specialist", image: "assets/lifestyle/6.jpeg" },
-  { name: "Sandy Pip", role: "Skincare Specialist", image: "assets/lifestyle/17.jpeg" },
+  { name: "Dr. Amanda Gern", role: "Lead Peptide Biochemist", image: "assets/lifestyle/5.jpeg" },
+  { name: "Dr. Heather Jan", role: "Director of Quality Control", image: "assets/lifestyle/6.jpeg" },
+  { name: "Dr. Sandy Pip", role: "Analytical Synthesis Lead", image: "assets/lifestyle/17.jpeg" },
 ];
