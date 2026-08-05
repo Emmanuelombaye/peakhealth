@@ -2,12 +2,15 @@
 
 Exact static replica of https://template51.cardsshield.com/
 
-## What changed (only this)
+## Branding only
+- PeakBody logo
+- PeakBody name / contact / small copy
 
-1. **Logo** — Cosma header logo replaced with official PeakBody logo  
-2. **Brand text** — `__MC_SITE_NAME__` / visible Cosma site name → **PeakBody** (phone/address too)
-
-Animations, layout, product images, and Cosma theme behavior are unchanged.
+## Mobile + clean URLs
+- Responsive product grid and off-canvas mobile Menu
+- Entrance animation fallback on phones
+- Links use clean paths (`/shop/`, `/about-us/`) — no `.html` in the address bar
+- Hosting helpers: `.htaccess`, `vercel.json`, `_redirects`
 
 ## Preview
 
