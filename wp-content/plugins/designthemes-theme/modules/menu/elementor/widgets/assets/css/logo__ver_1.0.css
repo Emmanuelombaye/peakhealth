@@ -1,0 +1,24 @@
+
+/*--------------------------------------------------------------
+   Logo
+--------------------------------------------------------------*/
+
+.dt-logo-container a {
+    color: inherit;
+}
+
+.dt-logo-container a img {
+    display: inline-block;
+    vertical-align: middle;
+    vertical-align: middle;
+}
+
+.dt-logo-container a .site-title {
+    color: var(--DTHeadAltColor);
+    clear: both;
+    display: block;    
+    font-family: var(--DTFontTypo_Alt);
+    font-size: var(--DTFontSize_H2);
+    font-weight: bold;
+    line-height: 1.1;
+}

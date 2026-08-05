@@ -1,0 +1,2424 @@
+@font-face {
+    font-family: 'DT Icons';
+    src: url('../font/dt-icons__76449145.eot');
+    src: url('../font/dt-icons__76449145.eot') format('embedded-opentype'), url('../font/dt-icons__76449145.woff2') format('woff2'), url('../font/dt-icons__76449145.woff') format('woff'), url('../font/dt-icons__76449145.ttf') format('truetype'), url('../font/dt-icons__76449145.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+
+
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+
+
+/*
+@media screen and (-webkit-min-device-pixel-ratio:0) {
+  @font-face {
+    font-family: 'DT Icons';
+    src: url('../font/dt-icons__76449145.svg') format('svg');
+  }
+}
+*/
+
+[class^="dticon-"]:before,
+[class*=" dticon-"]:before {
+    font-family: "DT Icons";
+    font-style: normal;
+    font-weight: normal;
+    speak: never;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.dticon-music:before {
+    content: '\e801';
+}
+
+
+/* '' */
+
+.dticon-search:before {
+    content: '\e802';
+}
+
+
+/* '' */
+
+.dticon-envelope-o:before {
+    content: '\e803';
+}
+
+
+/* '' */
+
+.dticon-heart:before {
+    content: '\e804';
+}
+
+
+/* '' */
+
+.dticon-heart-o:before {
+    content: '\e805';
+}
+
+
+/* '' */
+
+.dticon-star:before {
+    content: '\e806';
+}
+
+
+/* '' */
+
+.dticon-star-o:before {
+    content: '\e807';
+}
+
+
+/* '' */
+
+.dticon-star-half:before {
+    content: '\e808';
+}
+
+
+/* '' */
+
+.dticon-user:before {
+    content: '\e809';
+}
+
+
+/* '' */
+
+.dticon-users:before {
+    content: '\e80a';
+}
+
+
+/* '' */
+
+.dticon-film:before {
+    content: '\e80b';
+}
+
+
+/* '' */
+
+.dticon-video-camera:before {
+    content: '\e80c';
+}
+
+
+/* '' */
+
+.dticon-picture-o:before {
+    content: '\e80d';
+}
+
+
+/* '' */
+
+.dticon-camera:before {
+    content: '\e80e';
+}
+
+
+/* '' */
+
+.dticon-camera-retro:before {
+    content: '\e80f';
+}
+
+
+/* '' */
+
+.dticon-th-large:before {
+    content: '\e810';
+}
+
+
+/* '' */
+
+.dticon-th:before {
+    content: '\e811';
+}
+
+
+/* '' */
+
+.dticon-th-list:before {
+    content: '\e812';
+}
+
+
+/* '' */
+
+.dticon-check:before {
+    content: '\e813';
+}
+
+
+/* '' */
+
+.dticon-check-circle:before {
+    content: '\e814';
+}
+
+
+/* '' */
+
+.dticon-check-circle-o:before {
+    content: '\e815';
+}
+
+
+/* '' */
+
+.dticon-times:before {
+    content: '\e816';
+}
+
+
+/* '' */
+
+.dticon-times-circle:before {
+    content: '\e817';
+}
+
+
+/* '' */
+
+.dticon-times-circle-o:before {
+    content: '\e818';
+}
+
+
+/* '' */
+
+.dticon-plus:before {
+    content: '\e819';
+}
+
+
+/* '' */
+
+.dticon-plus-circle:before {
+    content: '\e81a';
+}
+
+
+/* '' */
+
+.dticon-minus:before {
+    content: '\e81b';
+}
+
+
+/* '' */
+
+.dticon-minus-circle:before {
+    content: '\e81c';
+}
+
+
+/* '' */
+
+.dticon-question-circle:before {
+    content: '\e81d';
+}
+
+
+/* '' */
+
+.dticon-info-circle:before {
+    content: '\e81e';
+}
+
+
+/* '' */
+
+.dticon-home:before {
+    content: '\e81f';
+}
+
+
+/* '' */
+
+.dticon-link:before {
+    content: '\e820';
+}
+
+
+/* '' */
+
+.dticon-paperclip:before {
+    content: '\e821';
+}
+
+
+/* '' */
+
+.dticon-lock:before {
+    content: '\e822';
+}
+
+
+/* '' */
+
+.dticon-unlock:before {
+    content: '\e823';
+}
+
+
+/* '' */
+
+.dticon-thumb-tack:before {
+    content: '\e824';
+}
+
+
+/* '' */
+
+.dticon-eye:before {
+    content: '\e825';
+}
+
+
+/* '' */
+
+.dticon-eye-slash:before {
+    content: '\e826';
+}
+
+
+/* '' */
+
+.dticon-tag:before {
+    content: '\e827';
+}
+
+
+/* '' */
+
+.dticon-tags:before {
+    content: '\e828';
+}
+
+
+/* '' */
+
+.dticon-bookmark:before {
+    content: '\e829';
+}
+
+
+/* '' */
+
+.dticon-flag:before {
+    content: '\e82a';
+}
+
+
+/* '' */
+
+.dticon-thumbs-o-up:before {
+    content: '\e82b';
+}
+
+
+/* '' */
+
+.dticon-thumbs-o-down:before {
+    content: '\e82c';
+}
+
+
+/* '' */
+
+.dticon-share:before {
+    content: '\e82f';
+}
+
+
+/* '' */
+
+.dticon-share-square-o:before {
+    content: '\e830';
+}
+
+
+/* '' */
+
+.dticon-pencil:before {
+    content: '\e831';
+}
+
+
+/* '' */
+
+.dticon-edit:before {
+    content: '\e832';
+}
+
+
+/* '' */
+
+.dticon-print:before {
+    content: '\e834';
+}
+
+
+/* '' */
+
+.dticon-comment:before {
+    content: '\e836';
+}
+
+
+/* '' */
+
+.dticon-comments:before {
+    content: '\e835';
+}
+
+
+/* '' */
+
+.dticon-bell-o:before {
+    content: '\e837';
+}
+
+
+/* '' */
+
+.dticon-exclamation-triangle:before {
+    content: '\e838';
+}
+
+
+/* '' */
+
+.dticon-exclamation-circle:before {
+    content: '\e839';
+}
+
+
+/* '' */
+
+.dticon-map-marker:before {
+    content: '\e83a';
+}
+
+
+/* '' */
+
+.dticon-file-o:before {
+    content: '\e83c';
+}
+
+
+/* '' */
+
+.dticon-folder:before {
+    content: '\e83d';
+}
+
+
+/* '' */
+
+.dticon-folder-open:before {
+    content: '\e83e';
+}
+
+
+/* '' */
+
+.dticon-phone:before {
+    content: '\e83f';
+}
+
+
+/* '' */
+
+.dticon-cog:before {
+    content: '\e840';
+}
+
+
+/* '' */
+
+.dticon-cogs:before {
+    content: '\e841';
+}
+
+
+/* '' */
+
+.dticon-wrench:before {
+    content: '\e842';
+}
+
+
+/* '' */
+
+.dticon-shopping-cart:before {
+    content: '\e843';
+}
+
+
+/* '' */
+
+.dticon-calendar:before {
+    content: '\e844';
+}
+
+
+/* '' */
+
+.dticon-sign-in:before {
+    content: '\e845';
+}
+
+
+/* '' */
+
+.dticon-sign-out:before {
+    content: '\e846';
+}
+
+
+/* '' */
+
+.dticon-headphones:before {
+    content: '\e848';
+}
+
+
+/* '' */
+
+.dticon-clock-o:before {
+    content: '\e849';
+}
+
+
+/* '' */
+
+.dticon-ban:before {
+    content: '\e84a';
+}
+
+
+/* '' */
+
+.dticon-expand:before {
+    content: '\e84b';
+}
+
+
+/* '' */
+
+.dticon-compress:before {
+    content: '\e84c';
+}
+
+
+/* '' */
+
+.dticon-arrows-v:before {
+    content: '\e84d';
+}
+
+
+/* '' */
+
+.dticon-arrows-h:before {
+    content: '\e84e';
+}
+
+
+/* '' */
+
+.dticon-search-plus:before {
+    content: '\e84f';
+}
+
+
+/* '' */
+
+.dticon-search-minus:before {
+    content: '\e850';
+}
+
+
+/* '' */
+
+.dticon-caret-down:before {
+    content: '\e851';
+}
+
+
+/* '' */
+
+.dticon-caret-up:before {
+    content: '\e852';
+}
+
+
+/* '' */
+
+.dticon-caret-left:before {
+    content: '\e853';
+}
+
+
+/* '' */
+
+.dticon-caret-right:before {
+    content: '\e854';
+}
+
+
+/* '' */
+
+.dticon-chevron-down:before {
+    content: '\e855';
+}
+
+
+/* '' */
+
+.dticon-chevron-left:before {
+    content: '\e856';
+}
+
+
+/* '' */
+
+.dticon-chevron-right:before {
+    content: '\e857';
+}
+
+
+/* '' */
+
+.dticon-chevron-up:before {
+    content: '\e858';
+}
+
+
+/* '' */
+
+.dticon-arrow-down:before {
+    content: '\e859';
+}
+
+
+/* '' */
+
+.dticon-arrow-left:before {
+    content: '\e85a';
+}
+
+
+/* '' */
+
+.dticon-arrow-right:before {
+    content: '\e85b';
+}
+
+
+/* '' */
+
+.dticon-arrow-up:before {
+    content: '\e85c';
+}
+
+
+/* '' */
+
+.dticon-arrow-circle-o-down:before {
+    content: '\e861';
+}
+
+
+/* '' */
+
+.dticon-arrow-circle-o-up:before {
+    content: '\e862';
+}
+
+
+/* '' */
+
+.dticon-repeat:before {
+    content: '\e864';
+}
+
+
+/* '' */
+
+.dticon-undo:before {
+    content: '\e865';
+}
+
+
+/* '' */
+
+.dticon-random:before {
+    content: '\e866';
+}
+
+
+/* '' */
+
+.dticon-play:before {
+    content: '\e867';
+}
+
+
+/* '' */
+
+.dticon-play-circle-o:before {
+    content: '\e868';
+}
+
+
+/* '' */
+
+.dticon-stop:before {
+    content: '\e869';
+}
+
+
+/* '' */
+
+.dticon-pause:before {
+    content: '\e86a';
+}
+
+
+/* '' */
+
+.dticon-trophy:before {
+    content: '\e874';
+}
+
+
+/* '' */
+
+.dticon-globe:before {
+    content: '\e875';
+}
+
+
+/* '' */
+
+.dticon-cloud:before {
+    content: '\e876';
+}
+
+
+/* '' */
+
+.dticon-list:before {
+    content: '\e883';
+}
+
+
+/* '' */
+
+.dticon-outdent:before {
+    content: '\e884';
+}
+
+
+/* '' */
+
+.dticon-indent:before {
+    content: '\e885';
+}
+
+
+/* '' */
+
+.dticon-book:before {
+    content: '\e88c';
+}
+
+
+/* '' */
+
+.dticon-asterisk:before {
+    content: '\e890';
+}
+
+
+/* '' */
+
+.dticon-gift:before {
+    content: '\e891';
+}
+
+
+/* '' */
+
+.dticon-magnet:before {
+    content: '\e893';
+}
+
+
+/* '' */
+
+.dticon-bar-chart:before {
+    content: '\e894';
+}
+
+
+/* '' */
+
+.dticon-inbox:before {
+    content: '\e89a';
+}
+
+
+/* '' */
+
+.dticon-move:before {
+    content: '\f047';
+}
+
+
+/* '' */
+
+.dticon-external-link:before {
+    content: '\f08e';
+}
+
+
+/* '' */
+
+.dticon-bookmark-o:before {
+    content: '\f097';
+}
+
+
+/* '' */
+
+.dticon-phone-square:before {
+    content: '\f098';
+}
+
+
+/* '' */
+
+.dticon-twitter:before {
+    content: '\f099';
+}
+
+
+/* '' */
+
+.dticon-facebook:before {
+    content: '\f09a';
+}
+
+
+/* '' */
+
+.dticon-github:before {
+    content: '\f09b';
+}
+
+
+/* '' */
+
+.dticon-rss:before {
+    content: '\f09e';
+}
+
+
+/* '' */
+
+.dticon-certificate:before {
+    content: '\f0a3';
+}
+
+
+/* '' */
+
+.dticon-arrow-circle-left:before {
+    content: '\f0a8';
+}
+
+
+/* '' */
+
+.dticon-arrow-circle-right:before {
+    content: '\f0a9';
+}
+
+
+/* '' */
+
+.dticon-arrow-circle-up:before {
+    content: '\f0aa';
+}
+
+
+/* '' */
+
+.dticon-arrow-circle-down:before {
+    content: '\f0ab';
+}
+
+
+/* '' */
+
+.dticon-filter:before {
+    content: '\f0b0';
+}
+
+
+/* '' */
+
+.dticon-arrows-alt:before {
+    content: '\f0b2';
+}
+
+
+/* '' */
+
+.dticon-files-o:before {
+    content: '\f0c5';
+}
+
+
+/* '' */
+
+.dticon-bars:before {
+    content: '\f0c9';
+}
+
+
+/* '' */
+
+.dticon-list-ul:before {
+    content: '\f0ca';
+}
+
+
+/* '' */
+
+.dticon-list-ol:before {
+    content: '\f0cb';
+}
+
+
+/* '' */
+
+.dticon-table:before {
+    content: '\f0ce';
+}
+
+
+/* '' */
+
+.dticon-pinterest:before {
+    content: '\f0d2';
+}
+
+
+/* '' */
+
+.dticon-pinterest-square:before {
+    content: '\f0d3';
+}
+
+
+/* '' */
+
+.dticon-money:before {
+    content: '\f0d6';
+}
+
+
+/* '' */
+
+.dticon-sort:before {
+    content: '\f0dc';
+}
+
+
+/* '' */
+
+.dticon-sort-down:before {
+    content: '\f0dd';
+}
+
+
+/* '' */
+
+.dticon-sort-up:before {
+    content: '\f0de';
+}
+
+
+/* '' */
+
+.dticon-envelope:before {
+    content: '\f0e0';
+}
+
+
+/* '' */
+
+.dticon-linkedin:before {
+    content: '\f0e1';
+}
+
+
+/* '' */
+
+.dticon-comment-o:before {
+    content: '\f0e5';
+}
+
+
+/* '' */
+
+.dticon-comments-o:before {
+    content: '\f0e6';
+}
+
+
+/* '' */
+
+.dticon-sitemap:before {
+    content: '\f0e8';
+}
+
+
+/* '' */
+
+.dticon-paste:before {
+    content: '\f0ea';
+}
+
+
+/* '' */
+
+.dticon-lightbulb-o:before {
+    content: '\f0eb';
+}
+
+
+/* '' */
+
+.dticon-exchange:before {
+    content: '\f0ec';
+}
+
+
+/* '' */
+
+.dticon-bell:before {
+    content: '\f0f3';
+}
+
+
+/* '' */
+
+.dticon-file-text-o:before {
+    content: '\f0f6';
+}
+
+
+/* '' */
+
+.dticon-plus-square:before {
+    content: '\f0fe';
+}
+
+
+/* '' */
+
+.dticon-angle-double-left:before {
+    content: '\f100';
+}
+
+
+/* '' */
+
+.dticon-angle-double-right:before {
+    content: '\f101';
+}
+
+
+/* '' */
+
+.dticon-angle-double-up:before {
+    content: '\f102';
+}
+
+
+/* '' */
+
+.dticon-angle-double-down:before {
+    content: '\f103';
+}
+
+
+/* '' */
+
+.dticon-angle-left:before {
+    content: '\f104';
+}
+
+
+/* '' */
+
+.dticon-angle-right:before {
+    content: '\f105';
+}
+
+
+/* '' */
+
+.dticon-angle-up:before {
+    content: '\f106';
+}
+
+
+/* '' */
+
+.dticon-angle-down:before {
+    content: '\f107';
+}
+
+
+/* '' */
+
+.dticon-desktop:before {
+    content: '\f108';
+}
+
+
+/* '' */
+
+.dticon-laptop:before {
+    content: '\f109';
+}
+
+
+/* '' */
+
+.dticon-tablet:before {
+    content: '\f10a';
+}
+
+
+/* '' */
+
+.dticon-mobile:before {
+    content: '\f10b';
+}
+
+
+/* '' */
+
+.dticon-circle-o:before {
+    content: '\f10c';
+}
+
+
+/* '' */
+
+.dticon-quote-left:before {
+    content: '\f10d';
+}
+
+
+/* '' */
+
+.dticon-quote-right:before {
+    content: '\f10e';
+}
+
+
+/* '' */
+
+.dticon-spinner:before {
+    content: '\f110';
+}
+
+
+/* '' */
+
+.dticon-circle:before {
+    content: '\f111';
+}
+
+
+/* '' */
+
+.dticon-mail-reply:before {
+    content: '\f112';
+}
+
+
+/* '' */
+
+.dticon-github-alt:before {
+    content: '\f113';
+}
+
+
+/* '' */
+
+.dticon-folder-o:before {
+    content: '\f114';
+}
+
+
+/* '' */
+
+.dticon-folder-open-o:before {
+    content: '\f115';
+}
+
+
+/* '' */
+
+.dticon-flag-o:before {
+    content: '\f11d';
+}
+
+
+/* '' */
+
+.dticon-mail-reply-all:before {
+    content: '\f122';
+}
+
+
+/* '' */
+
+.dticon-star-half-o:before {
+    content: '\f123';
+}
+
+
+/* '' */
+
+.dticon-location-arrow:before {
+    content: '\f124';
+}
+
+
+/* '' */
+
+.dticon-unlink:before {
+    content: '\f127';
+}
+
+
+/* '' */
+
+.dticon-question:before {
+    content: '\f128';
+}
+
+
+/* '' */
+
+.dticon-info:before {
+    content: '\f129';
+}
+
+
+/* '' */
+
+.dticon-exclamation:before {
+    content: '\f12a';
+}
+
+
+/* '' */
+
+.dticon-puzzle-piece:before {
+    content: '\f12e';
+}
+
+
+/* '' */
+
+.dticon-microphone:before {
+    content: '\f130';
+}
+
+
+/* '' */
+
+.dticon-calendar-o:before {
+    content: '\f133';
+}
+
+
+/* '' */
+
+.dticon-chevron-circle-left:before {
+    content: '\f137';
+}
+
+
+/* '' */
+
+.dticon-chevron-circle-right:before {
+    content: '\f138';
+}
+
+
+/* '' */
+
+.dticon-chevron-circle-up:before {
+    content: '\f139';
+}
+
+
+/* '' */
+
+.dticon-chevron-circle-down:before {
+    content: '\f13a';
+}
+
+
+/* '' */
+
+.dticon-unlock-alt:before {
+    content: '\f13e';
+}
+
+
+/* '' */
+
+.dticon-clock:before {
+    content: '\e849';
+}
+
+.dticon-ellipsis-h:before {
+    content: '\f141';
+}
+
+
+/* '' */
+
+.dticon-ellipsis-v:before {
+    content: '\f142';
+}
+
+
+/* '' */
+
+.dticon-rss-square:before {
+    content: '\f143';
+}
+
+
+/* '' */
+
+.dticon-play-circle:before {
+    content: '\f144';
+}
+
+
+/* '' */
+
+.dticon-minus-square:before {
+    content: '\f146';
+}
+
+
+/* '' */
+
+.dticon-minus-square-o:before {
+    content: '\f147';
+}
+
+
+/* '' */
+
+.dticon-level-up:before {
+    content: '\f148';
+}
+
+
+/* '' */
+
+.dticon-level-down:before {
+    content: '\f149';
+}
+
+
+/* '' */
+
+.dticon-check-square:before {
+    content: '\f14a';
+}
+
+
+/* '' */
+
+.dticon-pencil-square:before {
+    content: '\f14b';
+}
+
+
+/* '' */
+
+.dticon-external-link-square:before {
+    content: '\f14c';
+}
+
+
+/* '' */
+
+.dticon-compass:before {
+    content: '\f14e';
+}
+
+
+/* '' */
+
+.dticon-caret-square-o-down:before {
+    content: '\f150';
+}
+
+
+/* '' */
+
+.dticon-caret-square-o-up:before {
+    content: '\f151';
+}
+
+
+/* '' */
+
+.dticon-caret-square-o-right:before {
+    content: '\f152';
+}
+
+
+/* '' */
+
+.dticon-euro:before {
+    content: '\f153';
+}
+
+
+/* '' */
+
+.dticon-pound:before {
+    content: '\f154';
+}
+
+
+/* '' */
+
+.dticon-dollar:before {
+    content: '\f155';
+}
+
+
+/* '' */
+
+.dticon-rupee:before {
+    content: '\f156';
+}
+
+
+/* '' */
+
+.dticon-file:before {
+    content: '\f15b';
+}
+
+
+/* '' */
+
+.dticon-file-text:before {
+    content: '\f15c';
+}
+
+
+/* '' */
+
+.dticon-sort-amount-up:before {
+    content: '\f160';
+}
+
+
+/* '' */
+
+.dticon-sort-amount-down:before {
+    content: '\f161';
+}
+
+
+/* '' */
+
+.dticon-thumbs-up:before {
+    content: '\f164';
+}
+
+
+/* '' */
+
+.dticon-thumbs-down:before {
+    content: '\f165';
+}
+
+
+/* '' */
+
+.dticon-youtube:before {
+    content: '\f167';
+}
+
+
+/* '' */
+
+.dticon-youtube-play:before {
+    content: '\f16a';
+}
+
+
+/* '' */
+
+.dticon-dropbox:before {
+    content: '\f16b';
+}
+
+
+/* '' */
+
+.dticon-instagram:before {
+    content: '\f16d';
+}
+
+
+/* '' */
+
+.dticon-flickr:before {
+    content: '\f16e';
+}
+
+
+/* '' */
+
+.dticon-tumblr:before {
+    content: '\f173';
+}
+
+
+/* '' */
+
+.dticon-tumblr-square:before {
+    content: '\f174';
+}
+
+
+/* '' */
+
+.dticon-long-arrow-down:before {
+    content: '\f175';
+}
+
+
+/* '' */
+
+.dticon-long-arrow-up:before {
+    content: '\f176';
+}
+
+
+/* '' */
+
+.dticon-long-arrow-left:before {
+    content: '\f177';
+}
+
+
+/* '' */
+
+.dticon-long-arrow-right:before {
+    content: '\f178';
+}
+
+
+/* '' */
+
+.dticon-android:before {
+    content: '\f17b';
+}
+
+
+/* '' */
+
+.dticon-dribbble:before {
+    content: '\f17d';
+}
+
+
+/* '' */
+
+.dticon-skype:before {
+    content: '\f17e';
+}
+
+
+/* '' */
+
+.dticon-trello:before {
+    content: '\f181';
+}
+
+
+/* '' */
+
+.dticon-archive:before {
+    content: '\f187';
+}
+
+
+/* '' */
+
+.dticon-arrow-circle-o-right:before {
+    content: '\f18e';
+}
+
+
+/* '' */
+
+.dticon-arrow-circle-o-left:before {
+    content: '\f190';
+}
+
+
+/* '' */
+
+.dticon-caret-square-o-left:before {
+    content: '\f191';
+}
+
+
+/* '' */
+
+.dticon-dot-circle-o:before {
+    content: '\f192';
+}
+
+
+/* '' */
+
+.dticon-vimeo-square:before {
+    content: '\f194';
+}
+
+
+/* '' */
+
+.dticon-plus-square-o:before {
+    content: '\f196';
+}
+
+
+/* '' */
+
+.dticon-slack:before {
+    content: '\f198';
+}
+
+
+/* '' */
+
+.dticon-envelope-square:before {
+    content: '\f199';
+}
+
+
+/* '' */
+
+.dticon-wordpress:before {
+    content: '\f19a';
+}
+
+
+/* '' */
+
+.dticon-yahoo:before {
+    content: '\f19e';
+}
+
+
+/* '' */
+
+.dticon-google:before {
+    content: '\f1a0';
+}
+
+
+/* '' */
+
+.dticon-delicious:before {
+    content: '\f1a5';
+}
+
+
+/* '' */
+
+.dticon-digg:before {
+    content: '\f1a6';
+}
+
+
+/* '' */
+
+.dticon-language:before {
+    content: '\f1ab';
+}
+
+
+/* '' */
+
+.dticon-fax:before {
+    content: '\f1ac';
+}
+
+
+/* '' */
+
+.dticon-cubes:before {
+    content: '\f1b3';
+}
+
+
+/* '' */
+
+.dticon-behance:before {
+    content: '\f1b4';
+}
+
+
+/* '' */
+
+.dticon-behance-square:before {
+    content: '\f1b5';
+}
+
+
+/* '' */
+
+.dticon-file-pdf-o:before {
+    content: '\f1c1';
+}
+
+
+/* '' */
+
+.dticon-file-word-o:before {
+    content: '\f1c2';
+}
+
+
+/* '' */
+
+.dticon-file-excel-o:before {
+    content: '\f1c3';
+}
+
+
+/* '' */
+
+.dticon-file-powerpoint-o:before {
+    content: '\f1c4';
+}
+
+
+/* '' */
+
+.dticon-file-image-o:before {
+    content: '\f1c5';
+}
+
+
+/* '' */
+
+.dticon-file-archive-o:before {
+    content: '\f1c6';
+}
+
+
+/* '' */
+
+.dticon-file-audio-o:before {
+    content: '\f1c7';
+}
+
+
+/* '' */
+
+.dticon-file-video-o:before {
+    content: '\f1c8';
+}
+
+
+/* '' */
+
+.dticon-file-code-o:before {
+    content: '\f1c9';
+}
+
+
+/* '' */
+
+.dticon-life-ring:before {
+    content: '\f1cd';
+}
+
+
+/* '' */
+
+.dticon-circle-o-notch:before {
+    content: '\f1ce';
+}
+
+
+/* '' */
+
+.dticon-git-square:before {
+    content: '\f1d2';
+}
+
+
+/* '' */
+
+.dticon-git:before {
+    content: '\f1d3';
+}
+
+
+/* '' */
+
+.dticon-paper-plane:before {
+    content: '\f1d8';
+}
+
+
+/* '' */
+
+.dticon-paper-plane-o:before {
+    content: '\f1d9';
+}
+
+
+/* '' */
+
+.dticon-history:before {
+    content: '\f1da';
+}
+
+
+/* '' */
+
+.dticon-sliders:before {
+    content: '\f1de';
+}
+
+
+/* '' */
+
+.dticon-share-alt:before {
+    content: '\f1e0';
+}
+
+
+/* '' */
+
+.dticon-share-alt-square:before {
+    content: '\f1e1';
+}
+
+
+/* '' */
+
+.dticon-newspaper:before {
+    content: '\f1ea';
+}
+
+
+/* '' */
+
+.dticon-copyright:before {
+    content: '\f1f9';
+}
+
+
+/* '' */
+
+.dticon-at:before {
+    content: '\f1fa';
+}
+
+
+/* '' */
+
+.dticon-eyedropper:before {
+    content: '\f1fb';
+}
+
+
+/* '' */
+
+.dticon-brush:before {
+    content: '\f1fc';
+}
+
+
+/* '' */
+
+.dticon-area-chart:before {
+    content: '\f1fe';
+}
+
+
+/* '' */
+
+.dticon-pie-chart:before {
+    content: '\f200';
+}
+
+
+/* '' */
+
+.dticon-line-chart:before {
+    content: '\f201';
+}
+
+
+/* '' */
+
+.dticon-lastfm:before {
+    content: '\f202';
+}
+
+
+/* '' */
+
+.dticon-lastfm-square:before {
+    content: '\f203';
+}
+
+
+/* '' */
+
+.dticon-shirtsinbulk:before {
+    content: '\f214';
+}
+
+
+/* '' */
+
+.dticon-cart-plus:before {
+    content: '\f217';
+}
+
+
+/* '' */
+
+.dticon-cart-arrow-down:before {
+    content: '\f218';
+}
+
+
+/* '' */
+
+.dticon-pinterest-p:before {
+    content: '\f231';
+}
+
+
+/* '' */
+
+.dticon-whatsapp:before {
+    content: '\f232';
+}
+
+
+/* '' */
+
+.dticon-user-plus:before {
+    content: '\f234';
+}
+
+
+/* '' */
+
+.dticon-user-times:before {
+    content: '\f235';
+}
+
+
+/* '' */
+
+.dticon-opencart:before {
+    content: '\f23d';
+}
+
+
+/* '' */
+
+.dticon-television:before {
+    content: '\f26c';
+}
+
+
+/* '' */
+
+.dticon-calendar-plus-o:before {
+    content: '\f271';
+}
+
+
+/* '' */
+
+.dticon-calendar-minus-o:before {
+    content: '\f272';
+}
+
+
+/* '' */
+
+.dticon-calendar-times-o:before {
+    content: '\f273';
+}
+
+
+/* '' */
+
+.dticon-calendar-check-o:before {
+    content: '\f274';
+}
+
+
+/* '' */
+
+.dticon-map-pin:before {
+    content: '\f276';
+}
+
+
+/* '' */
+
+.dticon-map-signs:before {
+    content: '\f277';
+}
+
+
+/* '' */
+
+.dticon-map-o:before {
+    content: '\f278';
+}
+
+
+/* '' */
+
+.dticon-map:before {
+    content: '\f279';
+}
+
+
+/* '' */
+
+.dticon-commenting:before {
+    content: '\f27a';
+}
+
+
+/* '' */
+
+.dticon-commenting-o:before {
+    content: '\f27b';
+}
+
+
+/* '' */
+
+.dticon-vimeo:before {
+    content: '\f27d';
+}
+
+
+/* '' */
+
+.dticon-shopping-bag:before {
+    content: '\f290';
+}
+
+
+/* '' */
+
+.dticon-shopping-basket:before {
+    content: '\f291';
+}
+
+
+/* '' */
+
+.dticon-hashtag:before {
+    content: '\f292';
+}
+
+
+/* '' */
+
+.dticon-percent:before {
+    content: '\f295';
+}
+
+
+/* '' */
+
+.dticon-envelope-open:before {
+    content: '\f2b6';
+}
+
+
+/* '' */
+
+.dticon-envelope-open-o:before {
+    content: '\f2b7';
+}
+
+
+/* '' */
+
+.dticon-user-circle:before {
+    content: '\f2bd';
+}
+
+
+/* '' */
+
+.dticon-user-circle-o:before {
+    content: '\f2be';
+}
+
+
+/* '' */
+
+.dticon-user-o:before {
+    content: '\f2c0';
+}
+
+
+/* '' */
+
+.dticon-telegram:before {
+    content: '\f2c6';
+}
+
+
+/* '' */
+
+.dticon-window-close:before {
+    content: '\f2d3';
+}
+
+
+/* '' */
+
+.dticon-github-square:before {
+    content: '\f300';
+}
+
+
+/* '' */
+
+.dticon-twitter-square:before {
+    content: '\f304';
+}
+
+
+/* '' */
+
+.dticon-facebook-square:before {
+    content: '\f308';
+}
+
+
+/* '' */
+
+.dticon-linkedin-square:before {
+    content: '\f30c';
+}
+
+
+/* '' */
+
+
+/*--------------------------------------------------------------*/
+
+
+/* #region - Ext Icons */
+
+
+/*--------------------------------------------------------------*/
+
+@font-face {
+    font-family: 'Ext Icons';
+    src: url('../font/ext-icons__70837484.eot');
+    src: url('../font/ext-icons__70837484.eot') format('embedded-opentype'), url('../font/ext-icons__70837484.woff2') format('woff2'), url('../font/ext-icons__70837484.woff') format('woff'), url('../font/ext-icons__70837484.ttf') format('truetype'), url('../font/ext-icons__70837484.svg') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Chrome hack: SVG is rendered more smooth in Windozze. 100% magic, uncomment if you need it. */
+
+
+/* Note, that will break hinting! In other OS-es font will be not as sharp as it could be */
+
+
+/*
+  @media screen and (-webkit-min-device-pixel-ratio:0) {
+    @font-face {
+      font-family: 'Ext Icons';
+      src: url('../font/ext-icons__70837484.svg') format('svg');
+    }
+  }
+  */
+
+[class^="exticon-"]:before,
+[class*=" exticon-"]:before {
+    font-family: "Ext Icons";
+    font-style: normal;
+    font-weight: normal;
+    speak: never;
+    display: inline-block;
+    text-decoration: inherit;
+    width: 1em;
+    margin-right: .2em;
+    text-align: center;
+    /* opacity: .8; */
+    /* For safety - reset parent styles, that can break glyph codes*/
+    font-variant: normal;
+    text-transform: none;
+    /* fix buttons height, for twitter bootstrap */
+    line-height: 1em;
+    /* Animation center compensation - margins should be symmetric */
+    /* remove if not needed */
+    margin-left: .2em;
+    /* you can be more comfortable with increased icons size */
+    /* font-size: 120%; */
+    /* Font smoothing. That was taken from TWBS */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Uncomment for 3D effect */
+    /* text-shadow: 1px 1px 1px rgba(127, 127, 127, 0.3); */
+}
+
+.exticon-gridcol-ii:before {
+    content: '\e816';
+}
+
+
+/* '' */
+
+.exticon-gridcol-iii:before {
+    content: '\e819';
+}
+
+
+/* '' */
+
+.exticon-gridcol-iv:before {
+    content: '\e801';
+}
+
+
+/* '' */
+
+.exticon-list-view:before {
+    content: '\e815';
+}
+
+
+/* '' */
+
+.exticon-list-left:before {
+    content: '\e814';
+}
+
+
+/* '' */
+
+.exticon-list-right:before {
+    content: '\e812';
+}
+
+
+/* '' */
+
+.exticon-shopbag-plus:before {
+    content: '\e807';
+}
+
+
+/* '' */
+
+.exticon-shopbag-plus-fill:before {
+    content: '\e81a';
+}
+
+
+/* '' */
+
+.exticon-shopbag-view:before {
+    content: '\e80f';
+}
+
+
+/* '' */
+
+.exticon-shopbag-view-fill:before {
+    content: '\e804';
+}
+
+
+/* '' */
+
+.exticon-shopbag-option:before {
+    content: '\e81b';
+}
+
+
+/* '' */
+
+.exticon-heartfill-plus:before {
+    content: '\e802';
+}
+
+
+/* '' */
+
+.exticon-heartfill:before {
+    content: '\e803';
+}
+
+
+/* '' */
+
+.exticon-heartfill-alt:before {
+    content: '\e80d';
+}
+
+
+/* '' */
+
+.exticon-sizeguide:before {
+    content: '\e808';
+}
+
+
+/* '' */
+
+.exticon-sizeguide-alt:before {
+    content: '\e809';
+}
+
+
+/* '' */
+
+.exticon-sizescale:before {
+    content: '\e80a';
+}
+
+
+/* '' */
+
+.exticon-sizescale-alt:before {
+    content: '\e80b';
+}
+
+
+/* '' */
+
+.exticon-external:before {
+    content: '\e80c';
+}
+
+
+/* '' */
+
+.exticon-eye:before {
+    content: '\e80e';
+}
+
+
+/* '' */
+
+.exticon-list:before {
+    content: '\e818';
+}
+
+
+/* '' */
+
+.exticon-navarrow-more:before {
+    content: '\e806';
+}
+
+
+/* '' */
+
+.exticon-magnifier:before {
+    content: '\e813';
+}
+
+
+/* '' */
+
+.exticon-stacked:before {
+    content: '\e817';
+}
+
+
+/* '' */
+
+
+/* #endregion - Shop Icons */

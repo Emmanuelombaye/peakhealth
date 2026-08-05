@@ -1,0 +1,14 @@
+*[class*="elementor-size-"].elementor-button.dt-elementor-button { border-radius: 0; }
+
+.elementor-button.dt-elementor-button.elementor-size-xs .elementor-align-icon-left + .dt-elementor-button-text { margin-left: 4px; }
+
+.elementor-button.dt-elementor-button.dt-bordered { background: none; border: 2px solid; }
+.elementor-button.dt-elementor-button.dt-curve-cornered { border-radius: 5px; }
+.elementor-button.dt-elementor-button.dt-round-cornered { border-radius: 30px; }
+
+.elementor-button.dt-elementor-button.elementor-size-xl.dt-round-cornered { border-radius: 50px; }
+
+.elementor-align-justify .dt-elementor-button .elementor-align-icon-right + .dt-elementor-button-text { text-align: left; }
+.elementor-align-justify .dt-elementor-button .elementor-align-icon-left + .dt-elementor-button-text { text-align: right; }
+
+.elementor-button.dt-elementor-button.dt-bordered:hover { color: #fff; }

@@ -1,0 +1,299 @@
+
+/*--------------------------------------------------------------
+    Container
+--------------------------------------------------------------*/
+
+    .elementor-section-wrap .elementor-section.elementor-section-boxed > .elementor-container,
+    .elementor-section.elementor-section-boxed.elementor-top-section > .elementor-container  { max-width: 1230px; }
+
+	.elementor-section:not([data-settings*="background_background"]):not([class*="ary-bg"]) > .elementor-column-gap-default > .elementor-row {
+		width: calc(100% + 20px);
+		margin-left: -10px;
+		margin-right: -10px;
+	}
+	
+	.elementor-section:not([data-settings*="background_background"]):not([class*="ary-bg"]) > .elementor-column-gap-narrow > .elementor-row {
+		width: calc(100% + 10px);
+		margin-left: -5px;
+		margin-right: -5px;
+	}
+	
+	.elementor-section:not([data-settings*="background_background"]):not([class*="ary-bg"]) > .elementor-column-gap-extended > .elementor-row {
+		width: calc(100% + 30px);
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	
+	.elementor-section:not([data-settings*="background_background"]):not([class*="ary-bg"]) > .elementor-column-gap-wide > .elementor-row {
+		width: calc(100% + 40px);
+		margin-left: -20px;
+		margin-right: -20px;
+	}
+	
+	.elementor-section:not([data-settings*="background_background"]):not([class*="ary-bg"]) > .elementor-column-gap-wider > .elementor-row {
+		width: calc(100% + 60px);
+		margin-left: -30px;
+		margin-right: -30px;
+	}
+
+	.elementor-section.elementor-column-gap-25:not([data-settings*="background_background"]):not([class*="ary-bg"]) > .elementor-column-gap-default > .elementor-row {
+		width: calc(100% + 50px);
+		margin-left: -25px;
+		margin-right: -25px;		
+	}
+
+	.elementor-section.elementor-column-gap-25 > .elementor-column-gap-default > .elementor-row > .elementor-column > .elementor-element-populated { 
+		padding: 0 25px; 
+    }
+    
+    
+	.elementor-section[class*="dt-section-wrap-col"] .elementor-row { flex-flow: row wrap; }
+	
+	.elementor-section.dt-section-wrap-col-lg-12 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 100%; max-width: 100%; }
+	.elementor-section.dt-section-wrap-col-lg-11 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 91.66666667%; max-width: 91.66666667%; }
+	.elementor-section.dt-section-wrap-col-lg-10 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 83.33333333%; max-width: 83.33333333%; }
+	.elementor-section.dt-section-wrap-col-lg-9 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 75%; max-width: 75%; }
+	.elementor-section.dt-section-wrap-col-lg-8 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 66.66666667%; max-width: 66.66666667%; }
+	.elementor-section.dt-section-wrap-col-lg-7 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 58.33333333%; max-width: 58.33333333%; }
+	.elementor-section.dt-section-wrap-col-lg-6 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 50%; max-width: 50%; }
+	.elementor-section.dt-section-wrap-col-lg-5 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 41.66666667%; max-width: 41.66666667%; }
+	.elementor-section.dt-section-wrap-col-lg-4 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 33.33333333%; max-width: 33.33333333%; }
+	.elementor-section.dt-section-wrap-col-lg-3 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 25%; max-width: 25%; }
+	.elementor-section.dt-section-wrap-col-lg-2 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 16.66666667%; max-width: 16.66666667%; }
+	.elementor-section.dt-section-wrap-col-lg-1 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 8.33333333%; max-width: 8.33333333%; }
+
+
+
+/*----*****---- <<  Misc CSS >> ----*****----*/
+
+	.elementor-widget-heading[class*="ary-color"] .elementor-heading-title, 
+	.elementor-widget-icon[class*="ary-color"] .elementor-icon, 
+	.elementor-widget.elementor-widget-icon-list a:hover .elementor-icon-list-text { color: inherit; }
+
+	.elementor-icon-box-title strong { display: block; }
+	.elementor-text-editor > *:last-child { margin-bottom: 0; }
+
+	.elementor-section[class*="bg-opaque"] { position: relative; z-index: 1; }
+	.elementor-section[class*="bg-opaque"]:before { content: ""; display: inline; height: 100%; position: absolute; left: 0; top: 0; width: 100%; z-index: -1; }
+
+	.elementor-section[class*="bg-opaque-1"]:before { opacity: 0.1; }
+	.elementor-section[class*="bg-opaque-2"]:before { opacity: 0.2; }
+	.elementor-section[class*="bg-opaque-3"]:before { opacity: 0.3; }
+	.elementor-section[class*="bg-opaque-4"]:before { opacity: 0.4; }
+	.elementor-section[class*="bg-opaque-5"]:before { opacity: 0.5; }
+	.elementor-section[class*="bg-opaque-6"]:before { opacity: 0.6; }
+	.elementor-section[class*="bg-opaque-7"]:before { opacity: 0.7; }
+	.elementor-section[class*="bg-opaque-8"]:before { opacity: 0.8; }
+	.elementor-section[class*="bg-opaque-9"]:before { opacity: 0.9; }
+
+	.elementor-section[class*="bg-opaque-05"]:before { opacity: 0.05; }
+	.elementor-section[class*="bg-opaque-15"]:before { opacity: 0.15; }
+	.elementor-section[class*="bg-opaque-25"]:before { opacity: 0.25; }
+	.elementor-section[class*="bg-opaque-35"]:before { opacity: 0.35; }
+	.elementor-section[class*="bg-opaque-45"]:before { opacity: 0.45; }
+	.elementor-section[class*="bg-opaque-55"]:before { opacity: 0.55; }
+	.elementor-section[class*="bg-opaque-65"]:before { opacity: 0.65; }
+	.elementor-section[class*="bg-opaque-75"]:before { opacity: 0.75; }
+	.elementor-section[class*="bg-opaque-85"]:before { opacity: 0.85; }
+    .elementor-section[class*="bg-opaque-95"]:before { opacity: 0.95; }
+    
+
+/*--------------------------------------------------------------
+    Accents
+--------------------------------------------------------------*/
+
+    /* Primary */
+    .elementor-widget-jet-map .gm-style .gm-style-iw-d span, .elementor-widget-icon-list .elementor-icon-list-text:hover, .dt-elementor-ordered-list-items .dt-elementor-ordered-list-item:before { color: var(--DTPrimaryColor); } 
+
+    .elementor-widget-tabs.elementor-tabs-view-vertical.dt-vertical-bordered .elementor-tabs-wrapper .elementor-tab-title a:hover, .elementor-widget-tabs.elementor-tabs-view-vertical.dt-vertical-bordered .elementor-tabs-wrapper .elementor-tab-title.elementor-active a { color: var(--DTPrimaryColor); } 
+
+    .jet-carousel .jet-slick-dots li:hover span, .jet-carousel .jet-slick-dots li.slick-active span { background-color: var(--DTPrimaryColor); }
+
+
+/*--------------------------------------------------------------
+    Responsive
+--------------------------------------------------------------*/    
+
+@media only screen and (min-width:1441px) and (max-width:1680px) {
+
+    /*----*****---- << Custom Columns >> ----*****----*/	
+
+    .elementor-section.dt-section-wrap-col-hxlg-12 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 100%; max-width: 100%; }
+    .elementor-section.dt-section-wrap-col-hxlg-11 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 91.66666667%; max-width: 91.66666667%; }
+    .elementor-section.dt-section-wrap-col-hxlg-10 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 83.33333333%; max-width: 83.33333333%; }
+    .elementor-section.dt-section-wrap-col-hxlg-9 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 75%; max-width: 75%; }
+    .elementor-section.dt-section-wrap-col-hxlg-8 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 66.66666667%; max-width: 66.66666667%; }
+    .elementor-section.dt-section-wrap-col-hxlg-7 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 58.33333333%; max-width: 58.33333333%; }
+    .elementor-section.dt-section-wrap-col-hxlg-6 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 50%; max-width: 50%; }
+    .elementor-section.dt-section-wrap-col-hxlg-5 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 41.66666667%; max-width: 41.66666667%; }
+    .elementor-section.dt-section-wrap-col-hxlg-4 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 33.33333333%; max-width: 33.33333333%; }
+    .elementor-section.dt-section-wrap-col-hxlg-3 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 25%; max-width: 25%; }
+    .elementor-section.dt-section-wrap-col-hxlg-2 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 16.66666667%; max-width: 16.66666667%; }
+    .elementor-section.dt-section-wrap-col-hxlg-1 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 8.33333333%; max-width: 8.33333333%; }
+    
+    .dt-hidden-hxlg, .rs_hidden-hxlg { display: none !important; }
+
+}
+
+/*----*****---- << Laptop/Notebook >> ----*****----*/
+
+@media only screen and (min-width:1281px) and (max-width:1440px) {
+
+    .elementor-section.elementor-section-boxed > .elementor-container { max-width: 1080px; }
+
+
+    /*----*****---- << Custom Columns >> ----*****----*/	
+
+    .elementor-section.dt-section-wrap-col-qxlg-12 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 100%; max-width: 100%; }
+    .elementor-section.dt-section-wrap-col-qxlg-11 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 91.66666667%; max-width: 91.66666667%; }
+    .elementor-section.dt-section-wrap-col-qxlg-10 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 83.33333333%; max-width: 83.33333333%; }
+    .elementor-section.dt-section-wrap-col-qxlg-9 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 75%; max-width: 75%; }
+    .elementor-section.dt-section-wrap-col-qxlg-8 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 66.66666667%; max-width: 66.66666667%; }
+    .elementor-section.dt-section-wrap-col-qxlg-7 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 58.33333333%; max-width: 58.33333333%; }
+    .elementor-section.dt-section-wrap-col-qxlg-6 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 50%; max-width: 50%; }
+    .elementor-section.dt-section-wrap-col-qxlg-5 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 41.66666667%; max-width: 41.66666667%; }
+    .elementor-section.dt-section-wrap-col-qxlg-4 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 33.33333333%; max-width: 33.33333333%; }
+    .elementor-section.dt-section-wrap-col-qxlg-3 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 25%; max-width: 25%; }
+    .elementor-section.dt-section-wrap-col-qxlg-2 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 16.66666667%; max-width: 16.66666667%; }
+    .elementor-section.dt-section-wrap-col-qxlg-1 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 8.33333333%; max-width: 8.33333333%; }
+
+    .rs_hidden-qxlg, .dt-hidden-qxlg { display: none !important; }    
+
+}
+
+
+@media only screen and (min-width:1281px) {
+
+
+    .dt-col-lg-12, .elementor-section .elementor-row .elementor-column.dt-col-lg-12 { width: 100%; }
+    .dt-col-lg-11, .elementor-section .elementor-row .elementor-column.dt-col-lg-11 { width: 91.66666667%; }
+    .dt-col-lg-10, .elementor-section .elementor-row .elementor-column.dt-col-lg-10 { width: 83.33333333%; }
+    .dt-col-lg-9, .elementor-section .elementor-row .elementor-column.dt-col-lg-9 { width: 75%; }
+    .dt-col-lg-8, .elementor-section .elementor-row .elementor-column.dt-col-lg-8 { width: 66.66666667%; }
+    .dt-col-lg-7, .elementor-section .elementor-row .elementor-column.dt-col-lg-7 { width: 58.33333333%; }
+    .dt-col-lg-6, .elementor-section .elementor-row .elementor-column.dt-col-lg-6 { width: 50%; }
+    .dt-col-lg-5, .elementor-section .elementor-row .elementor-column.dt-col-lg-5 { width: 41.66666667%; }
+    .dt-col-lg-4, .elementor-section .elementor-row .elementor-column.dt-col-lg-4 { width: 33.33333333%; }
+    .dt-col-lg-3, .elementor-section .elementor-row .elementor-column.dt-col-lg-3 { width: 25%; }
+    .dt-col-lg-2, .elementor-section .elementor-row .elementor-column.dt-col-lg-2 { width: 16.66666667%; }
+    .dt-col-lg-1, .elementor-section .elementor-row .elementor-column.dt-col-lg-1 { width: 8.33333333%; }	
+
+}
+
+
+/*----*****---- << Tablet (Landscape) >> ----*****----*/
+
+/* Note: Design for a width of 960px */	
+@media only screen and (min-width:1025px) and (max-width:1280px) {
+
+    .elementor-section.elementor-section-boxed > .elementor-container { max-width:900px; }
+
+		
+    /*----*****---- << Custom Columns >> ----*****----*/
+    .elementor-section.dt-section-wrap-col-md-12 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 100%; max-width: 100%; }
+    .elementor-section.dt-section-wrap-col-md-11 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 91.66666667%; max-width: 91.66666667%; }
+    .elementor-section.dt-section-wrap-col-md-10 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 83.33333333%; max-width: 83.33333333%; }
+    .elementor-section.dt-section-wrap-col-md-9 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 75%; max-width: 75%; }
+    .elementor-section.dt-section-wrap-col-md-8 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 66.66666667%; max-width: 66.66666667%; }
+    .elementor-section.dt-section-wrap-col-md-7 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 58.33333333%; max-width: 58.33333333%; }
+    .elementor-section.dt-section-wrap-col-md-6 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 50%; max-width: 50%; }
+    .elementor-section.dt-section-wrap-col-md-5 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 41.66666667%; max-width: 41.66666667%; }
+    .elementor-section.dt-section-wrap-col-md-4 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 33.33333333%; max-width: 33.33333333%; }
+    .elementor-section.dt-section-wrap-col-md-3 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 25%; max-width: 25%; }
+    .elementor-section.dt-section-wrap-col-md-2 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 16.66666667%; max-width: 16.66666667%; }
+    .elementor-section.dt-section-wrap-col-md-1 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 8.33333333%; max-width: 8.33333333%; }			
+
+    .dt-hidden-md { display: none !important; }
+
+}
+
+
+	 
+/*----*****---- << Tablet (Portrait) >> ----*****----*/	
+
+/* Note: Design for a width of 768px */
+@media only screen and (min-width:768px) and (max-width:1024px) {
+
+    .elementor-section.elementor-section-boxed > .elementor-container { max-width:710px; }
+
+
+    /*----*****---- << Custom Columns >> ----*****----*/	
+    .elementor-section.dt-section-wrap-col-sm-12 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 100%; max-width: 100%; }
+    .elementor-section.dt-section-wrap-col-sm-11 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 91.66666667%; max-width: 91.66666667%; }
+    .elementor-section.dt-section-wrap-col-sm-10 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 83.33333333%; max-width: 83.33333333%; }
+    .elementor-section.dt-section-wrap-col-sm-9 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 75%; max-width: 75%; }
+    .elementor-section.dt-section-wrap-col-sm-8 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 66.66666667%; max-width: 66.66666667%; }
+    .elementor-section.dt-section-wrap-col-sm-7 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 58.33333333%; max-width: 58.33333333%; }
+    .elementor-section.dt-section-wrap-col-sm-6 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 50%; max-width: 50%; }
+    .elementor-section.dt-section-wrap-col-sm-5 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 41.66666667%; max-width: 41.66666667%; }
+    .elementor-section.dt-section-wrap-col-sm-4 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 33.33333333%; max-width: 33.33333333%; }
+    .elementor-section.dt-section-wrap-col-sm-3 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 25%; max-width: 25%; }
+    .elementor-section.dt-section-wrap-col-sm-2 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 16.66666667%; max-width: 16.66666667%; }
+    .elementor-section.dt-section-wrap-col-sm-1 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 8.33333333%; max-width: 8.33333333%; }
+
+    .dt-hidden-sm { display: none !important; }    
+
+}
+
+
+/*----*****---- << Mobile (Landscape) >> ----*****----*/	
+
+/* Common Styles for the devices below 767px width */
+@media only screen and (max-width: 767px) {
+
+    .dt-col, div[class*="dt-col"], section[class*="dt-col"], li[class*="dt-col"] { width: 100%; }
+
+    .dt-hidden-sm { display: none !important; }
+
+    .elementor-section.dt-section-wrap-col-lg-12 > .elementor-container > .elementor-row > .elementor-column, 
+    .elementor-section.dt-section-wrap-col-lg-11 > .elementor-container > .elementor-row > .elementor-column, 
+    .elementor-section.dt-section-wrap-col-lg-10 > .elementor-container > .elementor-row > .elementor-column, 
+    .elementor-section.dt-section-wrap-col-lg-9 > .elementor-container > .elementor-row > .elementor-column, 
+    .elementor-section.dt-section-wrap-col-lg-8 > .elementor-container > .elementor-row > .elementor-column, 
+    .elementor-section.dt-section-wrap-col-lg-7 > .elementor-container > .elementor-row > .elementor-column, 
+    .elementor-section.dt-section-wrap-col-lg-6 > .elementor-container > .elementor-row > .elementor-column, 
+    .elementor-section.dt-section-wrap-col-lg-5 > .elementor-container > .elementor-row > .elementor-column, 
+    .elementor-section.dt-section-wrap-col-lg-4 > .elementor-container > .elementor-row > .elementor-column, 
+    .elementor-section.dt-section-wrap-col-lg-3 > .elementor-container > .elementor-row > .elementor-column, 
+    .elementor-section.dt-section-wrap-col-lg-2 > .elementor-container > .elementor-row > .elementor-column, 
+    .elementor-section.dt-section-wrap-col-lg-1 > .elementor-container > .elementor-row > .elementor-column { flex: 1 1 auto; max-width: 100%; }	
+
+
+    .elementor-section .elementor-section > .elementor-column-gap-default > .elementor-row,
+    .elementor-section .elementor-section > .elementor-column-gap-narrow > .elementor-row, 
+    .elementor-section .elementor-section > .elementor-column-gap-extended > .elementor-row,
+    .elementor-section .elementor-section > .elementor-column-gap-wide > .elementor-row, 
+    .elementor-section .elementor-section > .elementor-column-gap-wider > .elementor-row, 
+    .elementor-section .elementor-section.elementor-column-gap-25 > .elementor-column-gap-default > .elementor-row {
+        width: auto;
+        margin-left: 0;
+        margin-right: 0;		
+    }	
+
+ }
+
+
+/*----*****---- << Mobile (Landscape) >> ----*****----*/	
+
+/* Note: Design for a width of 480px */
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    .elementor-section.elementor-section-boxed > .elementor-container, .jet-dropbar__content-wrapper { max-width:420px; }
+
+}
+
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+
+    .elementor-section.elementor-section-boxed > .elementor-container, .jet-dropbar__content-wrapper { max-width: 290px; }
+
+}
+
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+@media only screen and (max-width: 319px) {
+    
+    .elementor-section.elementor-section-boxed > .elementor-container, .jet-dropbar__content-wrapper { max-width:200px; }
+
+}

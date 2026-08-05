@@ -1,0 +1,147 @@
+/* CSS Document */
+
+.dt-advanced-carousel-wrapper .slick-slide { padding: 0 10px; }
+.dt-advanced-carousel-wrapper.slick-vertical .slick-slide { padding: 10px 0; }
+
+.dt-advanced-carousel-wrapper .slick-slide .dt-slick-content-title { clear: both; color: var(--DTHeadAltColor); font-family: var(--DTFontTypo_Alt); font-size: var(--DTFontSize_H4); font-weight: var(--DTFontWeight_Alt); }
+.dt-advanced-carousel-wrapper .slick-slide .dt-slick-content-image, .dt-advanced-carousel-wrapper .slick-slide .dt-slick-content > * { margin-bottom: 0.75em; }
+.dt-advanced-carousel-wrapper .slick-slide .dt-slick-content-btn { margin-top: 0.75em; margin-bottom: 0; }
+
+.dt-advanced-carousel-wrapper .dt-slick-button { background-image: none; color: #fff; }
+.dt-advanced-carousel-wrapper .dt-slick-button > i { text-align: center; width: 100%; }
+.dt-advanced-carousel-wrapper .dt-slick-button > i:before { height: 0; line-height: 0; }
+.dt-advanced-carousel-wrapper .dt-slick-button > i, .dt-advanced-carousel-wrapper .dt-slick-button > i:before { margin: auto; position: absolute; bottom: 0; left: 0; right: 0; top: 0; }
+
+/* Navigation Arrows */
+.dt-advanced-carousel-wrapper .slick-arrow { height: 35px; line-height: 35px; margin: 0; padding: 0; width: 35px; z-index: 2; }
+.dt-advanced-carousel-wrapper .slick-arrow:before { content: none; }
+.dt-advanced-carousel-wrapper .slick-arrow.slick-prev { left: 0; margin-left:  -60px; }
+.dt-advanced-carousel-wrapper .slick-arrow.slick-next { right: 0; margin-right:  -60px; }
+.dt-advanced-carousel-wrapper:hover .slick-arrow { margin-left: -45px; margin-right: -45px; }
+
+.dt-advanced-carousel-wrapper .slick-arrow span, .dt-advanced-carousel-wrapper .slick-arrow span:before { font-size: 18px; height: 100%; line-height: inherit; position: absolute; bottom: 0; left: 0; right: 0; top: 0; width: 100%; }
+
+.dt-advanced-carousel-wrapper .slick-arrow[class*="border"] { border-style: solid; border-width: 1px; }
+.dt-advanced-carousel-wrapper .slick-arrow[class*="circle"] { border-radius: 50%; }
+
+.dt-advanced-carousel-wrapper .slick-arrow.style-1, .dt-advanced-carousel-wrapper .slick-arrow.style-1:before,
+.dt-advanced-carousel-wrapper .slick-arrow.style-1 span, .dt-advanced-carousel-wrapper .slick-arrow.style-1 span:before,
+
+.dt-advanced-carousel-wrapper .slick-arrow.circle-border, .dt-advanced-carousel-wrapper .slick-arrow.circle-border:before,
+.dt-advanced-carousel-wrapper .slick-arrow.circle-border span, .dt-advanced-carousel-wrapper .slick-arrow.circle-border span:before,
+
+.dt-advanced-carousel-wrapper .slick-arrow.square-border, .dt-advanced-carousel-wrapper .slick-arrow.square-border:before,
+.dt-advanced-carousel-wrapper .slick-arrow.square-border span, .dt-advanced-carousel-wrapper .slick-arrow.square-border span:before { color: currentColor; }
+
+
+.dt-advanced-carousel-wrapper .slick-arrow[class*="bg"] { background-color: rgba(0,0,0,0.9); }
+.dt-advanced-carousel-wrapper .slick-arrow[class*="border"] { background-color: transparent; border-color: currentColor; }
+
+.dt-advanced-carousel-wrapper .slick-arrow.default:focus, .dt-advanced-carousel-wrapper .slick-arrow.default:hover, 
+.dt-advanced-carousel-wrapper .slick-arrow[class*="bg"]:focus, .dt-advanced-carousel-wrapper .slick-arrow[class*="bg"]:hover { background-color: var(--DTSecondaryColor); color: #fff; }
+
+.dt-advanced-carousel-wrapper .slick-arrow[class*="border"]:focus, .dt-advanced-carousel-wrapper .slick-arrow[class*="border"]:hover { color: var(--DTSecondaryColor); }
+
+/* Navigation Bullets */
+.dt-advanced-carousel-wrapper .slick-dots { margin-top: 35px; position: relative; bottom: auto;  }
+.dt-advanced-carousel-wrapper .slick-dots li { background-color: rgba(0,0,0,0.2); height: 10px; width: 10px; -webkit-transition: var(--DTBaseTransition); transition: var(--DTBaseTransition); }
+
+.dt-advanced-carousel-wrapper .slick-dots li.slick-active { background-color: #000; }
+
+.dt-advanced-carousel-wrapper .slick-dots li button, .dt-advanced-carousel-wrapper .slick-dots li button:before { background-color: transparent; font-size: 0; height: 100%; line-height: inherit; margin-top: 0; opacity: 1; padding: 0; width: 100%; -webkit-border-radius: inherit; border-radius: inherit; -webkit-transition: inherit; transition: inherit; }
+
+
+.dt-advanced-carousel-wrapper .slick-dots.style-1 li,
+.dt-advanced-carousel-wrapper .slick-dots.style-4 li,
+.dt-advanced-carousel-wrapper .slick-dots.style-6 li,
+.dt-advanced-carousel-wrapper .slick-dots.style-8 li { -webkit-border-radius: 50%; border-radius: 50%; }
+
+.dt-advanced-carousel-wrapper .slick-dots.style-1 li.slick-active { width: 25px; -webkit-border-radius: 1em; border-radius: 1em; }
+
+.dt-advanced-carousel-wrapper .slick-dots.style-2 li { height: 5px; width: 25px; }
+
+.dt-advanced-carousel-wrapper .slick-dots.style-2 li, .dt-advanced-carousel-wrapper .slick-dots.style-2 li.slick-active { border-radius: 3px; }
+.dt-advanced-carousel-wrapper .slick-dots.style-3 li, .dt-advanced-carousel-wrapper .slick-dots.style-3 li.slick-active { border-radius: 0; }
+
+.dt-advanced-carousel-wrapper .slick-dots.style-7 li,
+.dt-advanced-carousel-wrapper .slick-dots.style-8 li { height: 16px; width: 16px; }
+
+
+.dt-advanced-carousel-wrapper .slick-dots.style-4 li,
+.dt-advanced-carousel-wrapper .slick-dots.style-5 li,
+.dt-advanced-carousel-wrapper .slick-dots.style-6 li,
+.dt-advanced-carousel-wrapper .slick-dots.style-7 li,
+.dt-advanced-carousel-wrapper .slick-dots.style-8 li { background-color: transparent; }
+
+.dt-advanced-carousel-wrapper .slick-dots.style-4 li button,
+.dt-advanced-carousel-wrapper .slick-dots.style-5 li button,
+.dt-advanced-carousel-wrapper .slick-dots.style-6 li button,
+.dt-advanced-carousel-wrapper .slick-dots.style-7 li,
+.dt-advanced-carousel-wrapper .slick-dots.style-8 li { border: 1px solid; }
+
+.dt-advanced-carousel-wrapper .slick-dots.style-4 li button,
+.dt-advanced-carousel-wrapper .slick-dots.style-5 li.slick-active button,
+.dt-advanced-carousel-wrapper .slick-dots.style-6 li.slick-active button,
+.dt-advanced-carousel-wrapper .slick-dots.style-7 li,
+.dt-advanced-carousel-wrapper .slick-dots.style-8 li { border-color: transparent; }
+
+.dt-advanced-carousel-wrapper .slick-dots.style-4 li.slick-active button,
+.dt-advanced-carousel-wrapper .slick-dots.style-5 li button,
+.dt-advanced-carousel-wrapper .slick-dots.style-6 li button,
+.dt-advanced-carousel-wrapper .slick-dots.style-7 li.slick-active,
+.dt-advanced-carousel-wrapper .slick-dots.style-8 li.slick-active { border-color: #000; }
+
+
+.dt-advanced-carousel-wrapper .slick-dots.style-4 li button:before,
+.dt-advanced-carousel-wrapper .slick-dots.style-5 li.slick-active button:before,
+.dt-advanced-carousel-wrapper .slick-dots.style-6 li.slick-active button:before,
+.dt-advanced-carousel-wrapper .slick-dots.style-7 li button:before,
+.dt-advanced-carousel-wrapper .slick-dots.style-8 li button:before { background-color: #000; }
+
+.dt-advanced-carousel-wrapper .slick-dots.style-7 li button,
+.dt-advanced-carousel-wrapper .slick-dots.style-8 li button { height: 60%; position: absolute; left: 50%; top: 50%; width: 60%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+
+.dt-advanced-carousel-wrapper .slick-dots.style-4 li.slick-active button:before { -webkit-transform: scale(0); transform: scale(0); }
+
+
+.dt-advanced-carousel-wrapper .slick-dots.style-2 li,
+.dt-advanced-carousel-wrapper .slick-dots.style-3 li,
+.dt-advanced-carousel-wrapper .slick-dots.style-7 li button:after,
+.dt-advanced-carousel-wrapper .slick-dots.style-8 li button:after { background-color: rgba(0,0,0,0.2); }
+
+.dt-advanced-carousel-wrapper .slick-dots.style-2 li button:before,
+.dt-advanced-carousel-wrapper .slick-dots.style-3 li button:before,
+.dt-advanced-carousel-wrapper .slick-dots.style-7 li button:before,
+.dt-advanced-carousel-wrapper .slick-dots.style-8 li button:before { background-color: #000; left: auto; right: 0; width: 0; }
+
+.dt-advanced-carousel-wrapper .slick-dots.style-2 li.slick-active button:before,
+.dt-advanced-carousel-wrapper .slick-dots.style-3 li.slick-active button:before,
+.dt-advanced-carousel-wrapper .slick-dots.style-7 li.slick-active button:before,
+.dt-advanced-carousel-wrapper .slick-dots.style-8 li.slick-active button:before { left: 0; right: auto; width: 100%; }
+
+.dt-advanced-carousel-wrapper .slick-dots.style-7 li button:after,
+.dt-advanced-carousel-wrapper .slick-dots.style-8 li button:after { content: ""; height: 100%; position: absolute; left: 0; top: 0; width: 100%; -webkit-border-radius: inherit; border-radius: inherit; }
+
+
+/* Icon Styles */
+.dtel-slick-content-icon-wrapper { display: block; float: left; margin: 0 0 15px; width: 100%; }
+.dtel-slick-content-icon-wrapper .dtel-slick-content-icon { display: inline-block; font-size: 35px; line-height: 1; position: relative; -webkit-transition: var(--DTBaseTransition); transition: var(--DTBaseTransition); }
+.dtel-slick-content-icon-wrapper .dtel-slick-content-icon i { display: block; height: 1em; line-height: 1; margin: auto; position: relative; width: 1em; }
+.dtel-slick-content-icon-wrapper .dtel-slick-content-icon svg { display: inline-block; height: 1em; vertical-align: top; width: 1em; }
+
+.dtel-slick-content-icon-wrapper .dtel-slick-content-icon i:before { position: absolute; left: 50%; top: 50%; -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); }
+
+.dtel-slick-content-icon-view-stacked .dtel-slick-content-icon, .dtel-slick-content-icon-view-framed .dtel-slick-content-icon { padding: 0.5em; }
+.dtel-slick-content-icon-view-framed .dtel-slick-content-icon { background-color: transparent; border-style: solid; border-width: 2px; }
+.dtel-slick-content-icon-shape-circle .dtel-slick-content-icon { -webkit-border-radius: var(--DTRadius_Full); border-radius: var(--DTRadius_Full); }
+
+.dtel-slick-content-icon-view-stacked .dtel-slick-content-icon { 
+    background-color: var(--DTPrimaryColor); 
+    fill: var(--DTWhiteColor); 
+    color: var(--DTWhiteColor); 
+}
+.dtel-slick-content-icon-view-framed .dtel-slick-content-icon, .dtel-slick-content-icon-view-default .dtel-slick-content-icon {
+    fill: var( --DTPrimaryColor );
+    color: var( --DTPrimaryColor );
+    border-color: var( --DTPrimaryColor );
+}

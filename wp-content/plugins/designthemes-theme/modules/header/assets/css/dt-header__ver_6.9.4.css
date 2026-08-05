@@ -1,0 +1,392 @@
+/*--------------------------------------------------------------
+    Header
+--------------------------------------------------------------*/
+
+#header-wrapper.header-top-relative #header {
+    position: relative;
+}
+
+.no-breadcrumb.page-with-slider #header-wrapper.header-top-absolute #header {
+    position: absolute;
+    z-index: 10;
+}
+
+.no-breadcrumb.page-with-slider #header-wrapper.bottom-header {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: -ms-flex;
+    display: flex;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+}
+
+#header .elementor-section.elementor-section-boxed>.elementor-container,
+#header .dt-header-tpl .sticky-header.elementor-section-boxed {
+    max-width: 1230px;
+}
+
+.dt-header-menu ul.dt-primary-nav li.has-mega-menu>ul.sub-menu {
+    min-width: 1230px;
+}
+
+.dt-header-menu ul.dt-primary-nav li.has-mega-menu>ul.sub-menu h2:hover a {
+    color: var(--DTSecondaryColor);
+}
+
+.dt-header-menu ul.dt-primary-nav li.has-mega-menu>ul.sub-menu h2 a {
+    text-transform: uppercase;
+}
+
+
+/*--------------------------------------------------------------
+    Header Sticky
+--------------------------------------------------------------*/
+
+#header .dt-header-tpl .sticky-header-active {
+    -webkit-transition: .5s cubic-bezier(.25, .8, .25, 1) 0.05s;
+    transition: .5s cubic-bezier(.25, .8, .25, 1) 0.05s;
+}
+
+#header .dt-header-tpl .sticky-header-active {
+    clear: both;
+    margin: auto;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+#header .dt-header-tpl .sticky-header-active {
+    opacity: 0;
+    visibility: hidden;
+}
+
+#header .dt-header-tpl .sticky-header-active {
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+}
+
+#header .dt-header-tpl .sticky-header-active.dt-header-top {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+}
+
+#header .dt-header-tpl .sticky-header-active.dt-header-top {
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+}
+
+.sticky-header-active {
+    background-color: rgba(255, 255, 255, 0.95);
+}
+
+.logged-in.admin-bar #header .dt-header-tpl .sticky-header-active,
+.logged-in.admin-bar #header .dt-header-tpl .sticky-header-active.dt-header-top {
+    top: 32px;
+}
+
+@media screen and (max-width: 782px) {
+    .logged-in.admin-bar #header .dt-header-tpl .sticky-header-active,
+    .logged-in.admin-bar #header .dt-header-tpl .sticky-header-active.dt-header-top {
+        top: 46px;
+    }
+}
+
+
+/*--------------------------------------------------------------
+    Header Modules
+--------------------------------------------------------------*/
+
+
+/*--- Slide Menu ---*/
+
+.dt-simpler-slider {
+    background: transparent;
+    border: none;
+    display: block;
+    height: 32px;
+    right: 20px;
+    position: fixed;
+    top: 20px;
+    width: 32px;
+    z-index: 999;
+    cursor: pointer;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.dt-simpler-slider:before {
+    transform: translate3d(0, 0, 0);
+    transition: all 0.35s ease-in-out;
+    -moz-transform: translate3d(0, 0, 0);
+    -moz-transition: all 0.35s ease-in-out;
+    -ms-transform: translate3d(0, 0, 0);
+    -ms-transition: all 0.35s ease-in-out;
+    -webkit-transform: translate3d(0, 0, 0);
+    -webkit-transition: all 0.35s ease-in-out;
+    background: var(--DTBorderColor);
+    content: '';
+    display: block;
+    font-size: 14px;
+    line-height: 32px;
+    opacity: 1;
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    left: -4px;
+    top: -5px;
+}
+
+.dt-simpler-slider span {
+    width: 25px;
+    height: 3px;
+    background: #000;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: -12.5px;
+    margin-top: -1.5px;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+.dt-simpler-slider span:first-child {
+    top: 5px;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+}
+
+.dt-simpler-slider span:last-child {
+    bottom: 5px;
+    -webkit-transform: translate3d(0, 8px, 0);
+    transform: translate3d(0, 8px, 0);
+    -moz-transform: translate3d(0, 8px, 0);
+    -ms-transform: translate3d(0, 8px, 0);
+}
+
+.dt-simpler-slider span:nth-child(2) {
+    margin-top: -2px;
+    top: 50%;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+}
+
+.dt-simpler-slider span {
+    background: var(--DTWhiteColor);
+}
+
+.from-left .dt-simpler-slider,
+.overlay-header.from-left .dt-simpler-slider {
+    left: 20px;
+    right: auto;
+}
+
+.from-left.boxed-header .dt-simpler-slider {
+    left: 25px;
+    right: auto;
+}
+
+
+/*--------------------------------------------------------------
+    Mobile Menu
+--------------------------------------------------------------*/
+
+.mobile-menu ul.dt-primary-nav li.has-mega-menu ul.sub-menu li.menu-item-object-dt_mega_menus .elementor-section {
+    margin: 0;
+    left: auto !important;
+    width: auto !important;
+}
+
+.mobile-menu ul.dt-primary-nav li.has-mega-menu ul.sub-menu li.menu-item-object-dt_mega_menus .elementor-container .elementor-row {
+    margin: 0 !important;
+    width: 100% !important;
+}
+
+.mobile-menu ul.dt-primary-nav li.has-mega-menu ul.sub-menu li.menu-item-object-dt_mega_menus .elementor-column {
+    width: 100%;
+}
+
+.mobile-menu ul.dt-primary-nav li.has-mega-menu ul.sub-menu li.menu-item-object-dt_mega_menus .elementor-container .elementor-row>.elementor-column>.elementor-column-wrap {
+    padding: 15px !important;
+}
+
+.mobile-menu ul.dt-primary-nav li.has-mega-menu ul.sub-menu li.menu-item-object-dt_mega_menus .elementor-column ul.dt-primary-nav li:first-child a {
+    border-top-width: 0;
+}
+
+.align-inline .elementor-widget-dt-header-menu,
+.align-inline .elementor-widget-dt-header-icons {
+    width: auto !important;
+}
+
+
+/*--------------------------------------------------------------
+    Responsive
+--------------------------------------------------------------*/
+
+
+/*----*****---- << Laptop/Notebook >> ----*****----*/
+
+@media only screen and (min-width:1281px) and (max-width:1440px) {
+    #header .elementor-section.elementor-section-boxed>.elementor-container,
+    #header .dt-header-tpl .sticky-header.elementor-section-boxed {
+        max-width: 1080px;
+    }
+    .dt-header-menu ul.dt-primary-nav li.has-mega-menu>ul.sub-menu {
+        min-width: 1080px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .elementor-widget-wp-widget-nav_menu .mobile-nav-container {
+        width: auto;
+        float: none;
+        margin: 20px 0;
+        text-align: right;
+        padding-right: 10px;
+    }
+    body:not(.no-breadcrumb) #header-wrapper.header-top-absolute #header .dt-header-tpl {
+        margin-top: 0;
+    }
+}
+
+
+/*----*****---- << Tablet (Landscape) >> ----*****----*/
+
+
+/* Note: Design for a width of 960px */
+
+@media only screen and (min-width:1025px) and (max-width:1280px) {
+    #header .elementor-section.elementor-section-boxed>.elementor-container,
+    #header .dt-header-tpl .sticky-header.elementor-section-boxed {
+        max-width: 900px;
+    }
+    .dt-header-menu ul.dt-primary-nav li.has-mega-menu>ul.sub-menu {
+        min-width: 900px;
+    }
+}
+
+@media only screen and (min-width:1025px) {
+    #header .dt-header-tpl .elementor-section.sticky-header>.elementor-column-gap-default>.elementor-row>.elementor-column>.elementor-column-wrap,
+    #header .dt-header-tpl .elementor-section.sticky-header-active>.elementor-column-gap-default>.elementor-row>.elementor-column>.elementor-column-wrap {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+}
+
+
+/*----*****---- << Tablet (Landscape) >> ----*****----*/
+
+
+/* Note: Design for a width of 960px */
+
+@media only screen and (max-width:1024px) {
+    .elementor-widget-wp-widget-nav_menu .mobile-nav-container {
+        padding-right: 0;
+    }
+    #header .dt-header-tpl .sticky-header-active {
+        display: none;
+    }
+}
+
+
+/*----*****---- << Tablet (Portrait) >> ----*****----*/
+
+
+/* Note: Design for a width of 768px */
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    #header .elementor-section.elementor-section-boxed>.elementor-container,
+    #header .dt-header-tpl .sticky-header.elementor-section-boxed {
+        max-width: 710px;
+    }
+    .dt-header-menu ul.dt-primary-nav li.has-mega-menu>ul.sub-menu {
+        min-width: 710px;
+    }
+    .elementor-widget-wp-widget-nav_menu .mobile-nav-container {
+        padding-right: 20px;
+    }
+}
+
+
+/*----*****---- << Mobile (Landscape) >> ----*****----*/
+
+
+/* Common Styles for the devices below 767px width */
+
+@media only screen and (max-width: 767px) {
+    *[class*="elementor-"] .dt-mobile-menu-section .elementor-widget-wrap *[class*="elementor-element-"].elementor-element {
+        width: auto;
+        margin: 0;
+    }
+    .elementor-widget-dt-header-menu {
+        display: inline-block;
+        float: none;
+        margin: 10px 0;
+        text-align: center;
+        width: 100%;
+    }
+    .dt-logo-container.elementor-widget-image .elementor-widget-container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+
+/*----*****---- << Mobile (Landscape) >> ----*****----*/
+
+
+/* Note: Design for a width of 480px */
+
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+    #header .elementor-section.elementor-section-boxed>.elementor-container,
+    #header .dt-header-tpl .sticky-header.elementor-section-boxed {
+        max-width: 420px;
+    }
+    .dt-header-menu ul.dt-primary-nav li.has-mega-menu>ul.sub-menu {
+        min-width: 420px;
+    }
+}
+
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+
+@media only screen and (min-width: 320px) and (max-width: 479px) {
+    #header .elementor-section.elementor-section-boxed>.elementor-container,
+    #header .dt-header-tpl .sticky-header.elementor-section-boxed {
+        max-width: 290px;
+    }
+    .dt-header-menu ul.dt-primary-nav li.has-mega-menu>ul.sub-menu {
+        min-width: 290px;
+    }
+}
+
+
+/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
+
+@media only screen and (max-width: 319px) {
+    #header .elementor-section.elementor-section-boxed>.elementor-container,
+    #header .dt-header-tpl .sticky-header.elementor-section-boxed {
+        max-width: 200px;
+    }
+    .dt-header-menu ul.dt-primary-nav li.has-mega-menu>ul.sub-menu {
+        min-width: 200px;
+    }
+}

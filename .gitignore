@@ -1,8 +1,7 @@
+﻿_tmp/
+_archive_custom/
+_tools/
 __pycache__/
 *.pyc
-_tmp/
-template-home.html
-peakbody-home.html
 .DS_Store
-assets/source/
-*.log
+**/*.cosma.bak

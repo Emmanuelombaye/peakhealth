@@ -1,0 +1,303 @@
+/*----*****---- <<  Prettyphoto >> ----*****----*/
+
+body div.pp_overlay {
+    z-index: 9999;
+}
+
+div.pp_default .pp_content .pp_description {
+    line-height: inherit;
+}
+
+
+/*----*****---- <<  Misc CSS >> ----*****----*/
+
+.page-template-tpl-onepage #primary.content-full-width {
+    padding-bottom: 0;
+}
+
+.side-navigation-content .container,
+#primary.page-with-sidebar .container,
+.dt-portfolio-single-details .container {
+    max-width: 100%;
+    width: auto;
+}
+
+.dt-extend-bg-fullwidth-left:before,
+.dt-extend-brdr-fullwidth-left:before,
+.dt-extend-bg-fullwidth-right:after,
+.dt-extend-brdr-fullwidth-right:after {
+    content: "";
+    display: inline !important;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 9999px;
+}
+
+.dt-extend-bg-fullwidth-left:before,
+.dt-extend-brdr-fullwidth-left:before {
+    right: 100%;
+}
+
+.dt-extend-bg-fullwidth-right:after,
+.dt-extend-brdr-fullwidth-right:after {
+    left: 100%;
+}
+
+.dt-extend-bg-fullwidth-left:before,
+.dt-extend-bg-fullwidth-right:after {
+    background: inherit;
+}
+
+.dt-extend-brdr-fullwidth-left:before,
+.dt-extend-brdr-fullwidth-right:after {
+    border-color: inherit;
+    border-style: inherit;
+    border-width: inherit;
+}
+
+
+/* Carousel Cursors & Visibility */
+
+.slick-slider .slick-slide,
+.swiper-container.swiper-container-horizontal:not([class*="thumb-container"])>.swiper-wrapper>.swiper-slide {
+    /* cursor: url(../images/icon-cursor-move.cur), auto; */
+    cursor: move;
+}
+
+.dt-dark-cursor .slick-slider .slick-slide,
+.dt-dark-cursor .swiper-container.swiper-container-horizontal:not([class*="thumb-container"])>.swiper-wrapper>.swiper-slide {
+    /* cursor: url(../images/icon-cursor-move-alt.cur), auto; */
+    cursor: move;
+}
+
+.swiper-container.swiper-container-vertical:not([class*="thumb-container"])>.swiper-wrapper>.swiper-slide {
+    /* cursor: url(../images/icon-cursor-vertical-move.cur), auto; */
+    cursor: move;
+}
+
+.dt-dark-cursor .swiper-container.swiper-container-vertical:not([class*="thumb-container"])>.swiper-wrapper>.swiper-slide {
+    /* cursor: url(../images/icon-cursor-vertical-move-alt.cur), auto; */
+    cursor: move;
+}
+
+
+/*--------------------------------------------------------------*/
+
+
+/* #region - Accents */
+
+
+/*--------------------------------------------------------------*/
+
+
+/*----*****---- <<  Primary >> ----*****----*/
+
+.dt-skin-primary-color {
+    color: var(--DTPrimaryColor);
+}
+
+.dt-skin-primary-bg,
+.elementor-section[class*="dt-skin-primary-bg-opaque"]:before,
+.dt-sc-search-form-container .dt-sc-search-form-close {
+    background-color: var(--DTPrimaryColor);
+}
+
+.dt-skin-primary-border,
+.dt-sc-loading:before {
+    border-color: var(--DTPrimaryColor);
+}
+
+
+/* Buttons */
+
+.elementor-button.dt-elementor-button.dt-bordered {
+    color: var(--DTPrimaryColor);
+}
+
+.elementor-button.dt-elementor-button.dt-bordered {
+    border-color: var(--DTPrimaryColor);
+}
+
+.dt-sc-button,
+.elementor-button.dt-elementor-button {
+    background-color: var(--DTPrimaryColor);
+}
+
+
+/* Carousel */
+
+.carousel-arrows a:hover:before {
+    color: var(--DTPrimaryColor);
+}
+
+.swiper-scrollbar .swiper-scrollbar-drag,
+.dt-sc-any-carousel-wrapper .swiper-pagination.swiper-pagination-bullets .swiper-pagination-bullet-active,
+.dt-sc-any-carousel-wrapper .swiper-pagination-progressbar .swiper-pagination-progressbar-fill,
+.dt-sc-any-carousel-wrapper .swiper-scrollbar .swiper-scrollbar-drag,
+.jet-carousel .jet-slick-dots li:hover span,
+.jet-carousel .jet-slick-dots li.slick-active span {
+    background-color: var(--DTPrimaryColor);
+}
+
+.carousel-arrows a:hover {
+    border-color: var(--DTPrimaryColor);
+}
+
+.slick-dots li {
+    background-color: var(--DTSecondaryColor);
+}
+
+
+/* Elementor Modules/Widgets */
+
+.dt-elementor-ordered-list-items .dt-elementor-ordered-list-item:before {
+    color: var(--DTPrimaryColor);
+}
+
+
+/* Misc */
+
+.dtportfolio-sorting a:hover,
+.dtportfolio-sorting a.active-sort,
+.post-nav-container .post-next-link a:hover,
+.post-nav-container .post-prev-link a:hover,
+.post-nav-container .post-archive-link-wrapper a:hover {
+    color: var(--DTPrimaryColor);
+}
+
+.dt-sc-events-list .dt-sc-event-title h5 a,
+.dt-sc-event-image-caption .dt-sc-image-content h3 {
+    color: var(--DTPrimaryColor);
+}
+
+.dt-sc-event-image-caption:hover .dt-sc-image-content:before {
+    border-left-color: var(--DTPrimaryColor);
+}
+
+
+/*----*****---- <<  Secondary >> ----*****----*/
+
+.dt-skin-secondary-color {
+    color: var(--DTSecondaryColor);
+}
+
+.dt-skin-secondary-bg,
+.elementor-section[class*="dt-skin-secondary-bg-opaque"]:before,
+.dt-sc-search-form-container .dt-sc-search-form-close:hover {
+    background-color: var(--DTSecondaryColor);
+}
+
+.dt-skin-secondary-border {
+    border-color: var(--DTSecondaryColor);
+}
+
+
+/* Buttons */
+
+.dt-sc-button:hover,
+.elementor-button.dt-elementor-button:hover,
+.elementor-button.dt-elementor-button.dt-bordered:hover {
+    background-color: var(--DTSecondaryColor);
+}
+
+.elementor-button.dt-elementor-button.dt-bordered:hover {
+    border-color: var(--DTSecondaryColor);
+}
+
+
+/* Misc */
+
+.dt-sc-infinite-portfolio-load-more:hover,
+#wpsl-stores li>p~.wpsl-directions:hover {
+    background-color: var(--DTSecondaryColor);
+}
+
+
+/*----*****---- <<  Tertiary >> ----*****----*/
+
+.dt-skin-tertiary-color {
+    color: var(--DTTertiaryColor);
+}
+
+.dt-skin-tertiary-border {
+    border-color: var(--DTTertiaryColor);
+}
+
+.dt-skin-tertiary-bg,
+.elementor-section[class*="dt-skin-tertiary-bg-opaque"]:before {
+    background-color: var(--DTTertiaryColor);
+}
+
+
+/* Elementor Modules/Widgets */
+
+.elementor-widget-dt-counter .dt-sc-counter-wrapper.type2 .dt-sc-counter-inner {
+    border-color: var(--DTTertiaryColor);
+}
+
+
+/* #endregion - Accents */
+
+
+/*--------------------------------------------------------------*/
+
+
+/* #region - Responsive */
+
+
+/*--------------------------------------------------------------*/
+
+
+/*----*****---- << Mobile - Portrait >> ----*****----*/
+
+
+/* Common Styles for the devices below 479px width */
+
+@media only screen and (max-width: 479px) {
+    /*----*****---- << PrettyPhoto >> --****--*/
+    .pp_pic_holder {
+        width: 90% !important;
+        left: 5% !important;
+        overflow: hidden;
+    }
+    .pp_content {
+        width: 98%!important;
+        height: auto!important;
+    }
+    .pp_fade {
+        width: 100%!important;
+        height: 100%!important;
+    }
+    a.pp_expand,
+    a.pp_contract,
+    .pp_hoverContainer,
+    .pp_gallery {
+        display: none!important;
+    }
+    #pp_full_res img {
+        width: 100%!important;
+        height: auto!important;
+    }
+    .pp_details {
+        width: 100%!important;
+        position: static!important;
+        min-height: 25px;
+    }
+    .pp_details a.pp_close {
+        right: 25px;
+    }
+    div.pp_default .pp_content_container .pp_details {
+        margin-top: 15px;
+    }
+    .pp_pic_holder #pp_full_res iframe {
+        width: 100%;
+    }
+    /*----*****---- << Tooltip >> --****--*/
+    #tiptip_content {
+        font-size: 11px;
+    }
+}
+
+
+/* #endregion - Responsive */

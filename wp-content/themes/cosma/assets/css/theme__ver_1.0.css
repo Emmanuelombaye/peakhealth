@@ -1,0 +1,246 @@
+   /* Variables */
+   
+    :root {
+       /* Color Variables */
+       --DTPrimary_RGB: 26, 26, 26;
+       --DTSecondary_RGB: 191, 150, 74;
+       --DTTertiary_RGB: 248, 243, 235;
+       --DTBodyBG_RGB: 250, 247, 242;
+       --DTBodyTxt_RGB: 106, 106, 106;
+       --DTLink_RGB: 26, 26, 26;
+       --DTLinkHover_RGB: 191, 150, 74;
+       --DTBorder_RGB: 221, 221, 221;
+       --DTBlack_RGB: 191, 150, 74;
+       --DTWhite_RGB: 255, 255, 255;
+       --DTBorderColor: #ddd;
+       --DTBlackColor: #1a1a1a;
+       --DTWhiteColor: #fff;
+       /* New added */
+       --DTPrimaryColor: #1a1a1a;
+       --DTSecondaryColor: #bf964a;
+       /* Font Family Typo Variables */
+       --DTFontTypo_Base: 'Roboto', sans-serif;
+       /* for Body */
+       --DTFontTypo_Alt: 'Crimson Text', serif;
+       /* for Headings */
+       --DTFontTypo_Ext: 'Crimson Text', serif;
+       /* for Extra or Extended fonts */
+       /* Font Size Typo Variables */
+       --DTFontSize_Base: 16px;
+       --DTFontSize_H1: 50px;
+       --DTFontSize_H2: 44px;
+       --DTFontSize_H3: 36px;
+       --DTFontSize_H4: 30px;
+       --DTFontSize_H5: 24px;
+       --DTFontSize_H6: 20px;
+       /* Line-height Typo Variables */
+       --DTFontWeight_Base: 400;
+       --DTFontWeight_Alt: 700;
+       --DTFontWeight_Ext: 500;
+       /* Line-height Typo Variables */
+       --DTLineHeight_Base: 1.7;
+       --DTLineHeight_Alt: 1.25;
+       --DTLineHeight_Ext: 1.1;
+       /* Radius Variables */
+       --DTRadius_Zero: 0;
+       --DTRadius_Part: 2em;
+       --DTRadius_Full: 50%;
+       --DTRadius_1X: 3px;
+       --DTRadius_2X: 5px;
+       --DTRadius_3X: 10px;
+       /* Padding Variables */
+       --DTInputPadding: 12px 20px;
+       --DTPadding_Btn: 14px 30px;
+       --DTPadding_MiniBtn: 12px 20px;
+       --DTPadding_MaxiBtn: 16px 35px;
+       --DTBaseTransition: all 0.3s linear 0s;
+       --DTAltTransition: all 0.35s ease-in-out 0s;
+   }
+   /* Typography - Defaults */
+   /* Base */
+   
+   body,
+   button,
+   input,
+   textarea,
+   select,
+   optgroup {
+       font-family: var(--DTFontTypo_Base);
+       font-size: var(--DTFontSize_Base);
+       font-weight: var(--DTFontWeight_Base);
+       letter-spacing: 0;
+       line-height: var(--DTLineHeight_Base);
+       text-transform: none;
+   }
+   
+   input[type="submit"],
+   input[type="reset"],
+   input[type="button"],
+   button[type="button"],
+   [role="button"],
+   button,
+   .button,
+   a.button,
+   .dt-sc-button,
+   .elementor-button.dt-elementor-button,
+   .yith-wcwl-add-to-wishlist a,
+   .yith-wcqv-button,
+   .dt-wcsg-button {
+       line-height: 1em;
+   }
+   /* Headings */
+   
+   h1 {
+       font-size: var(--DTFontSize_H1);
+   }
+   
+   h2 {
+       font-size: var(--DTFontSize_H2);
+   }
+   
+   h3 {
+       font-size: var(--DTFontSize_H3);
+   }
+   
+   h4 {
+       font-size: var(--DTFontSize_H4);
+   }
+   
+   h5 {
+       font-size: var(--DTFontSize_H5);
+   }
+   
+   h6 {
+       font-size: var(--DTFontSize_H6);
+   }
+   
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6 {
+       font-family: var(--DTFontTypo_Alt);
+       font-weight: var(--DTFontWeight_Alt);
+       letter-spacing: 0;
+       line-height: var(--DTLineHeight_Alt);
+       text-transform: none;
+   }
+   /* Menu */
+   
+   .dt-header-menu li a {
+       font-family: var(--DTFontTypo_Alt);
+       font-weight: var(--DTFontWeight_Ext);
+   }
+   
+   .dt-header-menu ul li ul li>a {
+       font-size: var(--DTFontSize_Base);
+       font-weight: var(--DTFontWeight_Base);
+   }
+   /* Breadcrumb */
+   
+   .main-title-section h1 {
+       font-family: var(--DTFontTypo_Alt);
+   }
+   
+   .breadcrumb {
+       font-family: var(--DTFontTypo_Base);
+   }
+   
+   .main-title-section-wrapper> .container + .main-title-section-bg:after {
+       background-color: rgb(248, 243, 235, .85);
+   }
+   /* Footer */
+   
+   div.footer-widgets .widgettitle,
+   #footer .widgettitle {
+       font-family: var(--DTFontTypo_Alt);
+   }
+   
+   #footer,
+   .footer-copyright,
+   div.footer-widgets .widget {
+       font-family: var(--DTFontTypo_Base);
+   }
+   /* Base Colors - Defaults */
+   
+   body,
+   .layout-boxed .inner-wrapper {
+       background-color: var(--DTBodyBGColor);
+   }
+   /* Base */
+   
+   body {
+       color: var(--DTBodyTxtColor);
+   }
+   /* Links */
+   
+   a {
+       color: var(--DTLinkColor);
+   }
+   
+   a:hover {
+       color: var(--DTLinkHoverColor);
+   }
+   /* a:hover { color: rgba(var(--DTLinkHoverColor), 0.5); } */
+   /* Headings */
+   
+   h1,
+   h2,
+   h3,
+   h4,
+   h5,
+   h6 {
+       color: var(--DTHeadAltColor);
+   }
+   
+   h1 a,
+   h2 a,
+   h3 a,
+   h4 a,
+   h5 a,
+   h6 a {
+       color: inherit;
+   }
+   
+   h1 a:hover,
+   h2 a:hover,
+   h3 a:hover,
+   h4 a:hover,
+   h5 a:hover,
+   h6 a:hover {
+       color: var(--DTLinkHoverColor);
+   }
+   /* Menu */
+   
+   .no-header-menu ul li a,
+   .dt-header-menu .dt-primary-nav li a {
+       color: var(--DTHeadAltColor);
+   }
+   /* Footer */
+   
+   div.footer-widgets .widgettitle,
+   #footer .widgettitle {
+       color: var(--DTHeadAltColor);
+   }
+   
+   #footer,
+   .footer-copyright,
+   div.footer-widgets .widget {
+       color: var(--DTBodyTxtColor);
+   }
+   
+   .footer-widgets a,
+   #footer a {
+       color: var(--DTLinkColor);
+   }
+   
+   .footer-widgets a:hover,
+   #footer a:hover {
+       color: var(--DTLinkHoverColor);
+   }
+   
+   .dt-no-footer-builder-content.footer-copyright,
+   .footer-copyright {
+       background-color: var(--DTTertiaryColor);
+   }

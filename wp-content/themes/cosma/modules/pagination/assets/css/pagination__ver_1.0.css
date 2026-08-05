@@ -1,0 +1,114 @@
+
+
+/*--------------------------------------------------------------
+    Pagination
+--------------------------------------------------------------*/
+
+    .pagination { float: none; display: inline-block; margin-top: 35px; text-align: center; width: 100%; }
+    .pagination .column { float: right; width: 100%; }
+    .pagination .column, .pagination ul { margin: 0; }
+
+    .pagination ul, .entry-body > .page-link { padding-left: 0; display: flex; justify-content: center; text-align: center; }
+    .pagination ul li, .woocommerce nav.woocommerce-pagination ul li { display: inline-block; float: none; padding-bottom: 0; display: contents; }
+
+    .page-link {  clear: both; float: left; width: 100%; }
+
+    .pagination ul li a, .pagination ul li span,
+    .page-link a, .page-link > span,
+    .woocommerce nav.woocommerce-pagination ul li a, .woocommerce nav.woocommerce-pagination ul li span { background: none; border: 1px solid; display: inline-block; font-size: 13px; font-weight: 600; height: 40px; letter-spacing: .5px; line-height: 38px; margin: 10px 5px 0 0; padding: 0; position: relative; text-align: center; text-transform: uppercase; width: 40px; }
+
+    .woocommerce nav.woocommerce-pagination ul li span, .woocommerce nav.woocommerce-pagination ul li a { margin: 0; }
+
+    @media all and (-ms-high-contrast:none) {
+
+        .pagination ul li a.next { margin-right: 0; }
+        .pagination ul li a.next, .pagination ul li a.prev { top: -24px; } /* IE10 */ 
+        *::-ms-backdrop, .pagination ul li a.next, .pagination ul li a.prev { top: -24px; } /* IE11 */ 
+
+    }
+
+    .pagination ul li a.next i, .pagination ul li a.prev i { font-size: 14px; height: 30px; left: 50%; line-height: 30px; margin: 0; position: absolute; text-align: center; top: 50%; transform: translate(-50%, -50%); -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); width: 30px; }
+
+    .pagination div[class*="-posts"] { display: inline-block; float: none; position: relative; text-align: center; width: auto; z-index: 9; }
+    .pagination div[class*="-posts"] a { display: inline-block; float: none; font-size: 14px; font-weight: 500; line-height: normal; margin: 2px; min-width: 150px; }
+
+    .pagination:empty { display: none; }    
+    .archive .pagination.blog-pagination:empty { display: inline-block; }
+
+    .pagination .newer-posts a { margin-bottom: -1px; padding: 10px 18px 10px 10px; } 
+    .pagination .older-posts a { margin-bottom: -1px; padding: 10px 10px 10px 18px; }
+    .pagination .older-posts i, .pagination .newer-posts i { height: 20px; line-height: 20px; text-align: center; width: 20px; }    
+    .pagination div[class*="-posts"]:only-child a { margin: 0; }
+
+    .pagination a.loadmore-btn { display: inline-block; /*height: 35px; line-height: 35px; padding: 0 20px;*/ position: relative; width: auto; margin-top: 10px; }
+    .pagination a.loadmore-btn:not(.more-items) { cursor: not-allowed; }
+    /* .pagination a.loadmore-btn:before { border: 1px solid; bottom: -5px; content: ''; display: block; left: -5px; margin: auto; position: absolute; right: -5px; top: -5px; } */
+
+    .tpl-blog-holder.loading + .pagination a.loadmore-btn:after { animation: animateCircle 2s linear infinite; border: 3px solid transparent; border-radius: 50%; border-right: 3px solid #fff; border-top: 3px solid #fff; bottom: 0; content: ''; display: block; height: 25px; left: 0; margin: auto; opacity: .5; position: absolute; right: 0; top: 0; width: 25px; }
+
+    @keyframes animateCircle { 
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+    }
+
+    @keyframes animate { 
+        0% { transform: rotate(45deg); }
+        100% { transform: rotate(405deg); }
+    }
+
+
+
+/*--------------------------------------------------------------
+    Default Colors
+--------------------------------------------------------------*/
+
+    .pagination ul li span:not(.dots), .pagination ul li a:hover, .pagination .newer-posts a, .pagination .older-posts a, .pagination a.loadmore-btn, .page-link > span, .page-link > a:hover span { color: var(--DTWhiteColor); }
+
+    .pagination .newer-posts, .pagination .older-posts, .pagination ul li a:hover, .pagination a.loadmore-btn { background: var(--DTWhiteColor); }
+
+
+    .pagination a.loadmore-btn:before { border-color: var(--DTBorderColor); }
+
+    .tpl-blog-holder.loading + .pagination a.loadmore-btn:after { border-top-color: var(--DTWhiteColor); border-right-color: var(--DTWhiteColor); }
+
+
+
+/*--------------------------------------------------------------
+    Accents
+--------------------------------------------------------------*/
+
+    /* Primary Color */	
+    .pagination ul li a, .pagination ul li span.dots, .page-link a, .page-link a > span, .tpl-blog-holder.loading + .pagination a.loadmore-btn { color: var(--DTPrimaryColor); } 
+
+    .pagination .newer-posts a, .pagination .older-posts a, .pagination ul li span:not(.dots), .pagination ul li a:hover, .pagination a.loadmore-btn, .page-link > span, .page-link > a:hover { background-color: var(--DTPrimaryColor); }    
+
+    .pagination ul li span:not(.dots), .pagination ul li a:hover, .page-link > span, .page-link > a:hover { border-color: var(--DTPrimaryColor); }    
+    
+    .pagination .newer-posts a:hover, .pagination .older-posts a:hover, .pagination a.loadmore-btn:hover, .pagination a.loadmore-btn:not(.more-items) { background: var(--DTSecondaryColor); }
+
+    .tpl-blog-holder.loading + .pagination a.loadmore-btn:hover { color: var(--DTSecondaryColor); }
+    
+
+/*--------------------------------------------------------------
+    Responsive
+--------------------------------------------------------------*/
+
+    /*----*****---- << Tablet (Portrait) >> ----*****----*/ 
+
+    /* Note: Design for a width of 768px */
+    @media only screen and (min-width:768px) and (max-width:1024px) {
+
+
+    }
+
+/*----*****---- << Mobile (Landscape) >> ----*****----*/    
+
+/* Common Styles for the devices below 767px width */
+@media only screen and (max-width: 767px) {
+    
+    .pagination ul li a, .pagination ul li span, .page-link a, .page-link > span, .woocommerce nav.woocommerce-pagination ul li a, .woocommerce nav.woocommerce-pagination ul li span { font-size: 12px; font-weight: 600; height: 32px; line-height: 30px; width: 32px; }
+    
+    .pagination ul li a.next i, .pagination ul li a.prev i,
+    .woocommerce .product-loop-sorting nav.woocommerce-pagination ul li i { font-size: 12px; }
+    
+}

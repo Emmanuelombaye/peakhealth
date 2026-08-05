@@ -1,0 +1,474 @@
+/*--------------------------------------------------------------
+	Widgets
+--------------------------------------------------------------*/
+
+
+/*----*****---- << Transitions >> ----*****----*/
+
+.widget ul li:before,
+.widget ul li:hover:before,
+.widget.widget_archive ul li>a span,
+.widget.widget_archive ul li>a:hover span,
+.widget.widget_categories ul li>a span,
+.widget.widget_categories ul li>a:hover span,
+.widget .recent-portfolio-widget ul li a:before,
+.widget .recent-portfolio-widget ul li a:after,
+.widget.widget_flickr ul li a:before {
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s linear;
+    -o-transition: all 0.3s linear;
+    -ms-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+}
+
+
+/*----*****---- << WP Widget Defaults >> ----*****----*/
+
+.widget {
+    clear: both;
+    float: left;
+    margin-bottom: 30px;
+    position: relative;
+    width: 100%;
+}
+
+.widgettitle {
+    clear: both;
+    font-size: 20px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    position: relative;
+}
+
+.widgettitle:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 3px;
+    width: 35px;
+    bottom: 0;
+}
+
+.widgettitle.aligncenter:before {
+    right: 0;
+    margin: auto;
+}
+
+.widgettitle.alignright {
+    margin-left: 0;
+}
+
+.widgettitle.alignright:before {
+    right: 0;
+    left: auto;
+}
+
+.widget ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    float: left;
+    clear: both;
+}
+
+.widget ul li {
+    border-bottom: 1px solid;
+    clear: both;
+    display: block;
+    margin: 0;
+    padding: 10px 0 10px 0;
+    position: relative;
+    width: 100%;
+}
+
+.widget ul li:first-child:not(:only-child) {
+    padding-top: 0;
+}
+
+.widget ul li:last-child:not(:only-child) {
+    border-bottom-width: 0;
+}
+
+.widget ul li>a {
+    display: inline-block;
+    line-height: 24px;
+    width: 100%;
+}
+
+.widget ul li:last-child:not(:only-child)>a {
+    padding-bottom: 0;
+}
+
+
+/* Archives & Categories Widget */
+
+.widget.widget_categories ul li>a {
+    position: relative;
+    /*text-transform:capitalize;*/
+}
+
+.widget_categories label,
+.widget_archive label {
+    margin: 0 0 10px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+
+/* .widget.widget_categories ul li, .widget.widget_archive ul li { text-align-last: justify; } */
+
+.widget.widget_categories ul li>a,
+.widget.widget_archive ul li>a {
+    width: auto;
+}
+
+.widget.widget_categories ul li>a span,
+.widget.widget_archive ul li>a span {
+    float: right;
+    padding: 0;
+}
+
+
+/* Nav Menu Widget */
+
+.widget.widget_nav_menu ul.menu li:first-child {
+    padding-top: 0;
+}
+
+.widget.widget_nav_menu ul.menu li>a {
+    display: inline-block;
+    line-height: 24px;
+    width: 100%;
+}
+
+.widget.widget_nav_menu ul li {
+    padding: 0;
+}
+
+.widget.widget_nav_menu ul li,
+.widget.widget_nav_menu ul li:last-child {
+    border-width: 0 !important;
+}
+
+.widget.widget_nav_menu ul li a {
+    border-bottom: 1px solid;
+    padding: 10px 0;
+}
+
+.widget.widget_nav_menu ul li a:empty {
+    display: none;
+}
+
+
+/* RSS Widget */
+
+.widget_rss h3.widgettitle>a.rsswidget>img {
+    margin-right: 5px;
+    margin-top: -3px;
+}
+
+
+/* TagCloud Widget */
+
+.widget_tag_cloud .tagcloud,
+.widget .tagcloud {
+    float: left;
+    clear: both;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.widget_tag_cloud .tagcloud a,
+.widget .tagcloud a,
+.wp-block-tag-cloud a {
+    float: left;
+    font-size: 14px !important;
+    line-height: normal;
+    margin: 0 10px 10px 0;
+    padding: 7px 15px;
+    /*text-transform:capitalize;*/
+}
+
+.wp-block-tag-cloud a {
+    display: inline-block;
+    float: none;
+}
+
+
+/* Search Form */
+
+.widget #searchform {
+    max-width: 100%;
+    position: relative;
+    width: 100%;
+}
+
+.widget #searchform .dt-search-icon {
+    display: none;
+}
+
+.widget #searchform input[type="text"] {
+    padding-right: 50px;
+    height: 49px;
+    width: 100%;
+    margin-bottom: 0;
+}
+
+.widget #searchform input[type="submit"] {
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 0;
+    padding: 16px 20px;
+    margin: 0;
+    height: 49px;
+}
+
+
+/* WP-Calendar Widget */
+
+.widget #wp-calendar {
+    border-collapse: collapse;
+}
+
+.widget #wp-calendar caption {
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.widget #wp-calendar td {
+    padding: 0.5em 0;
+}
+
+.widget #wp-calendar td#next {
+    text-align: right;
+}
+
+.widget #wp-calendar td#prev {
+    text-align: left;
+}
+
+.widget.widget_calendar .wp-calendar-nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+.widget.widget_calendar .wp-calendar-nav span.pad {
+    display: none;
+}
+
+
+/*----*****---- << Common & Custom Widget Styles >> ----*****----*/
+
+
+/* Common Styles */
+
+.widget.widget_archive ul ul li:last-child,
+.widget.widget_categories ul ul li:last-child,
+.widget.widget_meta ul ul li:last-child,
+.widget.widget_nav_menu ul.menu ul li:last-child,
+.widget.widget_pages ul ul li:last-child {
+    border-bottom-width: 1px;
+}
+
+.widget.widget_nav_menu ul li ul.sub-menu,
+.widget.widget_pages ul li ul.children {
+    padding-left: 5%;
+    width: 100%;
+}
+
+.widget.widget_archive ul li ul,
+.widget.widget_categories ul li ul,
+.widget.widget_nav_menu ul.menu li ul,
+.widget.widget_pages ul li ul {
+    padding-left: 5%;
+    padding-top: 10px;
+}
+
+.widget.widget_archive ul li,
+.widget.widget_categories ul li,
+.widget.widget_nav_menu ul.menu li,
+.widget.widget_pages ul li,
+.widget.widget_meta ul li,
+.widget.widget_text ul li {
+    padding: 0;
+}
+
+.widget.widget_archive ul li>a,
+.widget.widget_categories ul li>a,
+.widget.widget_nav_menu ul.menu li>a,
+.widget.widget_pages ul li>a,
+.widget.widget_meta ul li>a,
+.widget.widget_text ul li>a {
+    padding: 10px 0;
+}
+
+.widget.widget_archive ul li:first-child>a,
+.widget.widget_categories ul li:first-child>a,
+.widget.widget_pages ul li:first-child>a,
+.widget.widget_nav_menu ul.menu li:first-child>a,
+.widget.widget_meta ul li:first-child>a,
+.widget.widget_text ul li:first-child>a {
+    padding-top: 0;
+}
+
+.widget .recent-posts-widget li:before,
+.widget .recent-posts-widget li:hover:before,
+.widget .recent-portfolio-widget ul li:before,
+.widget .recent-portfolio-widget ul li:hover:before {
+    content: "";
+}
+
+.widget.widget_media_video .mejs-layers .mejs-overlay-button {
+    background-color: transparent;
+}
+
+.widget.widget_recent_posts .recent-posts-widget .entry-title h4 a[href*="title-should-not-overflow-the-content-area"] {
+    word-break: break-all;
+}
+
+.widget.widget_recent_posts .recent-posts-widget .entry-title h4 {
+    font-size: calc(var(--DTFontSize_H4)/1.5);
+    line-height: 26px;
+    font-weight: normal;
+    margin-top: -5px;
+    margin-bottom: 5px;
+}
+
+.widget .recent-posts-widget li .entry-meta a{
+    display: none;
+}
+
+
+/* .widget.widget_recent_posts .recent-posts-widget ul li:first-child .entry-image { top: 6px; }
+	.widget.widget_recent_posts .recent-posts-widget .entry-image { position: absolute; max-width: 65px; top: 18px; }
+	.widget.widget_recent_posts .recent-posts-widget .entry-image ~ *[class*="entry-"] { padding-left: 80px; }
+	.widget.widget_recent_posts .recent-posts-widget .entry-image ~ *[class*="entry-"] h4 { margin-top: 10px; } */
+
+.widget_text form .selection-box+br:last-child {
+    display: none;
+}
+
+
+/*--------------------------------------------------------------
+	Colors
+--------------------------------------------------------------*/
+
+.widget ul li,
+.widget.widget_nav_menu ul.menu li,
+.widget.widget_nav_menu ul li a {
+    border-color: rgba(var(--DTBlack_RGB), 0.25);
+}
+
+.widget #wp-calendar td a {
+    color: rgba(var(--DTBlack_RGB), 0.5);
+}
+
+.widget_tag_cloud .tagcloud a,
+.widget .tagcloud a,
+.wp-block-tag-cloud a {
+    background: rgba(var(--DTBlack_RGB), 0.05);
+}
+
+.dt-sc-dark-bg .widget input[type="text"],
+.dt-sc-dark-bg .widget input[type="password"],
+.dt-sc-dark-bg .widget input[type="email"],
+.dt-sc-dark-bg .widget input[type="url"],
+.dt-sc-dark-bg .widget input[type="tel"],
+.dt-sc-dark-bg .widget input[type="number"],
+.dt-sc-dark-bg .widget input[type="range"],
+.dt-sc-dark-bg .widget input[type="date"],
+.dt-sc-dark-bg .widget textarea,
+.dt-sc-dark-bg .widget input[type="search"],
+.dt-sc-dark-bg .widget select,
+.dt-sc-dark-bg .widget.widget_categories ul li>a span,
+.dt-sc-dark-bg .widget.widget_archive ul li>a span {
+    background: rgba(var(--DTWhite_RGB), 0.15);
+}
+
+.dt-sc-dark-bg .widget .selection-box:after {
+    background: rgba(var(--DTWhite_RGB), 0.05);
+}
+
+.dt-sc-dark-bg .widget .selection-box:before {
+    border-top-color: rgba(var(--DTWhite_RGB), 0.1);
+}
+
+.dt-sc-dark-bg .widget ul li,
+.dt-sc-dark-bg .widget.widget_nav_menu ul.menu li {
+    border-color: rgba(var(--DTWhite_RGB), 0.2);
+}
+
+.dt-sc-dark-bg .widget #wp-calendar td a {
+    color: rgba(var(--DTWhite_RGB), 0.5);
+}
+
+.dt-sc-dark-bg .tagcloud a {
+    background: rgba(var(--DTWhite_RGB), 0.1);
+}
+
+.tagcloud a:hover,
+.wp-block-tag-cloud a:hover,
+#footer .dt-sc-dark-bg .tagcloud a:hover,
+#footer .tagcloud a:hover {
+    color: var(--DTWhiteColor);
+}
+
+
+/*--------------------------------------------------------------
+    Accents
+--------------------------------------------------------------*/
+
+
+/* Primary Color */
+
+.widget ul li>a:hover,
+.widget #wp-calendar td a:hover,
+.dt-sc-dark-bg .widget #wp-calendar td a:hover {
+    color: var(--DTPrimaryColor);
+}
+
+.widgettitle:before,
+.tagcloud a:hover,
+.wp-block-tag-cloud a:hover,
+.dt-sc-dark-bg .tagcloud a:hover,
+.dt-sc-dark-bg .widget.widget_categories ul li>a:hover span,
+#footer .dt-sc-dark-bg .widget.widget_categories ul li>a:hover span,
+#footer .dt-sc-dark-bg .widget.widget_archive ul li>a:hover span {
+    background-color: var(--DTPrimaryColor);
+}
+
+.tagcloud a:hover,
+.wp-block-tag-cloud a:hover,
+.dt-sc-dark-bg .tagcloud a:hover {
+    border-color: var(--DTPrimaryColor);
+}
+
+
+/*--------------------------------------------------------------
+	Responsive
+--------------------------------------------------------------*/
+
+@media only screen and (min-width:1025px) and (max-width:1280px) {
+    .tagcloud a {
+        margin: 0 4px 10px 0;
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width:1024px) {
+    .widgettitle {
+        font-size: 20px;
+    }
+    .tagcloud a {
+        margin: 0 4px 10px 0;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .tagcloud a {
+        margin: 0 5px 10px 0;
+    }
+}

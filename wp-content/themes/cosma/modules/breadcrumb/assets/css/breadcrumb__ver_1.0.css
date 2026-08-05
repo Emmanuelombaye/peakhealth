@@ -1,0 +1,188 @@
+/*--------------------------------------------------------------
+    Title & Breadcrumb
+--------------------------------------------------------------*/
+
+.main-title-section-wrapper {
+    clear: both;
+    float: left;
+    margin: 0;
+    padding: 90px 0 95px;
+    width: 100%;
+}
+
+#header-wrapper .main-title-section-wrapper {
+    position: relative;
+}
+
+.home #header-wrapper .main-title-section-wrapper {
+    display: none;
+}
+
+#header-wrapper .main-title-section-wrapper .breadcrumb,
+#header-wrapper .main-title-section-wrapper .main-title-section {
+    text-align: center;
+}
+
+.main-title-section {
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    pointer-events: none;
+}
+
+.main-title-section h1 {
+    /* font-size: calc(var(--DTFontSize_H1)/.95); */
+    margin: 0 0 5px;
+    word-break: break-all;
+    font-weight: normal;
+}
+
+.breadcrumb {
+    clear: both;
+    float: left;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+}
+
+.breadcrumb span:not(.current) {
+    display: inline-block;
+    margin: 0px 12px;
+    padding: 0;
+}
+
+.main-title-section-wrapper .breadcrumb-default-delimiter:before {
+    content: "";
+    background-color: currentColor;
+    display: inline-block;
+    height: 14px;
+    opacity: 0.45;
+    position: relative;
+    top: -1px;
+    vertical-align: middle;
+    width: 1px;
+    -webkit-transform: rotate(20deg);
+    transform: rotate(20deg);
+}
+
+.main-title-section h1,
+.breadcrumb {
+    hyphens: auto;
+    word-break: break-word;
+    word-wrap: break-word;
+    -moz-hyphens: auto;
+    -webkit-hyphens: auto;
+    -ms-hyphens: auto;
+}
+
+.main-title-section-wrapper>.main-title-section-bg,
+.main-title-section-wrapper>.main-title-section-bg:after {
+    content: "";
+    height: 100% !important;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+
+/*--------------------------------------------------------------
+    Default Colors
+--------------------------------------------------------------*/
+
+.breadcrumb {
+    color: var(--DTBodyTxtColor);
+}
+
+.main-title-section h1 {
+    color: var(--DTHeadAltColor);
+}
+
+.breadcrumb a {
+    color: var(--DTLinkColor);
+}
+
+.breadcrumb span.current {
+    color: var(--DTBodyTxtColor);
+}
+
+.main-title-section-wrapper>.main-title-section-bg:after {
+    background-color: rgba(var(--DTBlack_RGB), 0.05);
+}
+
+.main-title-section-wrapper.dark-bg-breadcrumb>.main-title-section-bg {
+    background-color: var(--DTBlackColor);
+}
+
+.dark-bg-breadcrumb .main-title-section h1,
+.dark-bg-breadcrumb .breadcrumb a,
+.dark-bg-breadcrumb .breadcrumb span.current,
+.dark-bg-breadcrumb .breadcrumb span:not(.current) {
+    color: var(--DTWhiteColor);
+}
+
+.breadcrumb a:hover,
+.dark-bg-breadcrumb .breadcrumb a:hover {
+    color: var(--DTLinkHoverColor);
+}
+
+
+/*--------------------------------------------------------------
+    Accents
+--------------------------------------------------------------*/
+
+
+/* Primary Color */
+
+.breadcrumb a:hover {
+    color: var(--DTLinkHoverColor);
+}
+
+
+/*--------------------------------------------------------------
+	Responsive
+--------------------------------------------------------------*/
+
+@media only screen and (min-width:1281px) {
+    .main-title-section-wrapper {
+        padding: 90px 0 95px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .main-title-section-wrapper {
+        padding: 45px 0 40px;
+    }
+}
+
+
+/*----*****---- << Mobile (Landscape) >> ----*****----*/
+
+
+/* Common Styles for the devices below 767px width */
+
+@media only screen and (max-width: 767px) {
+    .main-title-section h1 {
+        font-size: 32px;
+    }
+    .main-title-section,
+    .main-title-section h1,
+    .breadcrumb {
+        text-align: center;
+    }
+}
+
+
+/* Common Styles for the devices below 479px width */
+
+@media only screen and (max-width: 479px) {
+    .main-title-section h1 {
+        font-size: 30px;
+    }
+}

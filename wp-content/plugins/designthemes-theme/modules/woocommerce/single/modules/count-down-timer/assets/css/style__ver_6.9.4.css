@@ -1,0 +1,30 @@
+
+/*--------------------------------------------------------------*/
+    /* #region - Product Single CountDown Timer */
+/*--------------------------------------------------------------*/
+
+    .dt-sc-product-sale-countdown-holder { float: left; width: 100%; }
+    .dt-sc-product-sale-countdown-holder .dtshop-downcount { display: block; margin: 0 -10px; }
+    .dt-sc-product-sale-countdown-holder .dtshop-downcount .dt-sc-counter-wrapper { display: inline-block; line-height: 24px; min-height: 70px; padding: 10px; position: relative; width: 90px; }
+
+    .dt-sc-product-sale-countdown-holder .dtshop-downcount .dt-sc-counter-wrapper:before,
+    .dt-sc-product-sale-countdown-holder .dtshop-downcount .dt-sc-counter-wrapper:after { content: ""; height: 25px; margin: auto; position: absolute; right: -2px; width: 4px; border-radius: 25px; }
+
+    .dt-sc-product-sale-countdown-holder .dtshop-downcount .dt-sc-counter-wrapper:before { margin-top: -2px; top: 50%; -webkit-transform: translateY(-100%); transform: translateY(-100%); }
+    .dt-sc-product-sale-countdown-holder .dtshop-downcount .dt-sc-counter-wrapper:after { bottom: 50%; -webkit-transform: translateY(100%); transform: translateY(100%); }
+
+    .dt-sc-product-sale-countdown-holder .dtshop-downcount .dt-sc-counter-wrapper.last:before, 
+    .dt-sc-product-sale-countdown-holder .dtshop-downcount .dt-sc-counter-wrapper.last:after { visibility: hidden; }
+
+    .dt-sc-product-sale-countdown-holder .dtshop-downcount .dt-sc-counter-wrapper .dt-sc-counter-number { font-size: 28px; font-weight: 600; }
+    .dt-sc-product-sale-countdown-holder .dtshop-downcount .dt-sc-counter-wrapper .title { font-size: 12px; letter-spacing: 2px; margin: 10px 0 0; }
+
+
+
+    .dt-sc-product-sale-countdown-holder .dtshop-downcount .dt-sc-counter-wrapper:before,
+    .dt-sc-product-sale-countdown-holder .dtshop-downcount .dt-sc-counter-wrapper:after { background-color: rgba(var(--DTBlack_RGB),0.75); }
+
+
+    .dt-sc-product-sale-countdown-holder .dtshop-downcount .dt-sc-counter-wrapper .dt-sc-counter-number { color: var(--DTHeadAltColor); }
+
+/* #endregion - Product Single CountDown Timer */    

@@ -1,0 +1,39 @@
+
+/* CSS Document */
+
+.dtel-image-hotspots-container { position: relative; }
+
+.dtel-image-hotspots-container .hotspot-wrap, 
+.dtel-image-hotspots-container .hotspot-wrap .dtel-tooltip-hover-content { position: absolute; }
+
+.dtel-image-hotspots-container .hotspot-wrap > span { background-color: #8b6e61; cursor: pointer; display: inline-block; height: 14px; position: relative; width: 14px; border-radius: 50%; }
+.dtel-image-hotspots-container .hotspot-wrap > span:after { border: 1px solid #8b6e61; content: ""; height: auto; margin: -3px; position: absolute; bottom: 0; left: 0; right: 0; top: 0; width: auto; border-radius: inherit; transition: var(--DTBaseTransition); }
+
+.dtel-image-hotspots-container .hotspot-wrap > span:hover:after { margin: -4px; }
+
+.dtel-image-hotspots-container .hotspot-wrap .dtel-tooltip-hover-content { background-color: #333; color: #fff; font-family: var(--DTFontTypo_Alt); font-size: 14px; line-height: 1.4; margin: 0 15px; min-width: 420px; max-width: 480px; padding: 5px 10px; right: 100%; top: -5px; width: auto; z-index: 1; border-radius: 4px; transform: translateX(10px); opacity: 0; visibility: hidden; transition: var(--DTBaseTransition); }
+
+.dtel-image-hotspots-container .hotspot-wrap .dtel-tooltip-hover-content:after { content: ""; background-color: inherit; height: 8px; margin: auto; position: absolute; bottom: 0; left: 100%; top: 0; width: 8px; transform: rotate(45deg) translateX(-4px); transform-origin: left center; }
+
+.dtel-image-hotspots-container .hotspot-wrap span:hover + .dtel-tooltip-hover-content { opacity: 1; visibility: visible; transform: translateX(0); }
+
+.dtel-image-hotspots-container .hotspot-wrap .dtel-tooltip-hover-content p { margin: 0; }
+
+
+/* Responsive */
+
+@media only screen and (max-width: 1024px ) { 
+
+	.dtel-image-hotspots-container .hotspot-wrap .dtel-tooltip-hover-content { margin: 15px auto; min-width: 240px; max-width: 300px; text-align: center; left: 50%; right: auto; top: 100%; transform: translate(-50%, 10px); }
+	
+	.dtel-image-hotspots-container .hotspot-wrap .dtel-tooltip-hover-content:after { left: 0; right: 0; bottom: 100%; transform: rotate(45deg) translateX(0); transform-origin: center bottom; }
+	
+	.dtel-image-hotspots-container .hotspot-wrap > span:hover + .dtel-tooltip-hover-content { transform: translate(-50%, 0); }
+	
+}
+
+@media only screen and (max-width: 479px ) { 
+	
+	.dtel-image-hotspots-container .hotspot-wrap .dtel-tooltip-hover-content { min-width: auto; max-width: none; }
+	
+}
