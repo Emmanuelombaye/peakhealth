@@ -1,49 +1,143 @@
-/* PeakBody mobile + clean UX */
-html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-img,video{max-width:100%;height:auto}
-.dt-logo-container img{max-height:56px!important;width:auto!important}
-@media (max-width:1024px){
-  .dt-header-tpl .elementor-section{padding-left:12px!important;padding-right:12px!important}
-  .dt-logo-container{text-align:center}
-  .dt-logo-container img{max-height:48px!important}
-  .woocommerce ul.products,.dt-sc-product-list{display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:14px!important}
-  .woocommerce ul.products li.product,.dt-col{width:100%!important;max-width:100%!important;float:none!important;margin:0!important}
-  .product-wrapper .primary-image,.product-wrapper .secondary-image{background-size:cover!important}
-  .elementor-heading-title{word-break:break-word}
-  #footer .elementor-column{width:100%!important}
-  .mobile-nav-container.nav-is-visible .mobile-menu,
-  .mobile-nav-container.is-open .mobile-menu,
-  body.pb-nav-open .mobile-nav-container .mobile-menu{
-    display:block!important;visibility:visible!important;opacity:1!important;
-    position:fixed;top:0;right:0;width:min(86vw,360px);height:100vh;z-index:100000;
-    background:#fff;padding:72px 24px 32px;overflow:auto;box-shadow:-12px 0 40px rgba(0,0,0,.18);
-    transform:translateX(0)!important;
+/* PeakBody responsive helpers — do not fight Cosma mobile nav */
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+img,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+.dt-logo-container img {
+  max-height: 56px !important;
+  width: auto !important;
+}
+
+/* Keep Cosma off-canvas above page content; links must receive clicks */
+.mobile-menu.nav-is-visible {
+  z-index: 100050 !important;
+  pointer-events: auto !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+}
+
+.mobile-menu.nav-is-visible a {
+  pointer-events: auto !important;
+  cursor: pointer;
+}
+
+.mobile-menu-overlay.is-visible {
+  z-index: 100040 !important;
+  pointer-events: auto;
+}
+
+body.nav-is-visible {
+  overflow: hidden;
+}
+
+@media (max-width: 1280px) {
+  .dt-header-tpl .elementor-section {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
   }
-  body.pb-nav-open .mobile-nav-container .overlay,
-  .mobile-nav-container.is-open .overlay{
-    display:block!important;position:fixed;inset:0;background:rgba(26,26,26,.45);z-index:99998;
+
+  .dt-logo-container {
+    text-align: center;
   }
-  .mobile-menu .dt-primary-nav{display:flex!important;flex-direction:column;gap:8px;list-style:none;margin:0;padding:0}
-  .mobile-menu .dt-primary-nav li{display:block;width:100%}
-  .mobile-menu .dt-primary-nav a{display:block;padding:14px 4px;font-size:18px;color:#1a1a1a;border-bottom:1px solid #eee}
-  .mobile-menu .close-nav{position:absolute;top:18px;right:18px;width:36px;height:36px;cursor:pointer}
-  .mobile-menu .close-nav:before,.mobile-menu .close-nav:after{content:"";position:absolute;left:8px;right:8px;top:17px;height:2px;background:#1a1a1a}
-  .mobile-menu .close-nav:before{transform:rotate(45deg)}
-  .mobile-menu .close-nav:after{transform:rotate(-45deg)}
-  .menu-trigger{cursor:pointer;z-index:100001;position:relative}
+
+  .dt-logo-container img {
+    max-height: 48px !important;
+  }
+
+  .menu-trigger {
+    cursor: pointer;
+    position: relative;
+    z-index: 100060;
+  }
+
+  /* Desktop primary nav is hidden by Cosma below 1280px — leave it alone */
+  .dt-header-menu .menu-container {
+    pointer-events: none;
+  }
 }
-@media (max-width:767px){
-  .woocommerce ul.products,.dt-sc-product-list{grid-template-columns:1fr 1fr!important}
-  body{overflow-x:hidden}
-  .elementor-section.elementor-section-full_width>.elementor-container{padding-left:12px;padding-right:12px}
-  .elementor-invisible{visibility:hidden}
-  .animated{animation-fill-mode:both}
+
+@media (min-width: 1281px) {
+  /* Desktop horizontal nav must stay fully clickable */
+  .dt-header-menu .menu-container,
+  .dt-header-menu .dt-primary-nav,
+  .dt-header-menu .dt-primary-nav a {
+    pointer-events: auto !important;
+    visibility: visible;
+  }
+
+  .dt-header-menu .dt-primary-nav > li > a {
+    cursor: pointer;
+  }
 }
-@media (max-width:480px){
-  .woocommerce ul.products,.dt-sc-product-list{grid-template-columns:1fr!important}
-  .dt-logo-container img{max-height:42px!important}
+
+@media (max-width: 1024px) {
+  .woocommerce ul.products,
+  .dt-sc-product-list {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 14px !important;
+  }
+
+  .woocommerce ul.products li.product,
+  .dt-col {
+    width: 100% !important;
+    max-width: 100% !important;
+    float: none !important;
+    margin: 0 !important;
+  }
+
+  .product-wrapper .primary-image,
+  .product-wrapper .secondary-image {
+    background-size: cover !important;
+  }
+
+  .elementor-heading-title {
+    word-break: break-word;
+  }
+
+  #footer .elementor-column {
+    width: 100% !important;
+  }
 }
-.menu-container,.dt-header-menu{z-index:99999}
-body.pb-nav-open{overflow:hidden}
-.pb-nav-backdrop{position:fixed;inset:0;background:rgba(26,26,26,.45);z-index:99990;display:none}
-body.pb-nav-open .pb-nav-backdrop{display:block}
+
+@media (max-width: 767px) {
+  .woocommerce ul.products,
+  .dt-sc-product-list {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .elementor-section.elementor-section-full_width > .elementor-container {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .elementor-invisible {
+    visibility: hidden;
+  }
+
+  .animated {
+    animation-fill-mode: both;
+  }
+}
+
+@media (max-width: 480px) {
+  .woocommerce ul.products,
+  .dt-sc-product-list {
+    grid-template-columns: 1fr !important;
+  }
+
+  .dt-logo-container img {
+    max-height: 42px !important;
+  }
+}
