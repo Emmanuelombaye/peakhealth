@@ -1,7 +1,13 @@
-/* PeakBody responsive helpers — do not fight Cosma mobile nav */
+/* PeakBody responsive + nav/scroll UX */
 html {
-  scroll-behavior: smooth;
+  scroll-behavior: auto;
   -webkit-text-size-adjust: 100%;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }
 
 img,
@@ -15,26 +21,89 @@ video {
   width: auto !important;
 }
 
-/* Keep Cosma off-canvas above page content; links must receive clicks */
+/* ---- Mobile off-canvas (Cosma-compatible) ---- */
 .mobile-menu.nav-is-visible {
   z-index: 100050 !important;
   pointer-events: auto !important;
   opacity: 1 !important;
   visibility: visible !important;
+  background: #fff !important;
+  box-shadow: -16px 0 48px rgba(26, 26, 26, 0.18);
 }
 
 .mobile-menu.nav-is-visible a {
   pointer-events: auto !important;
   cursor: pointer;
+  transition: color 0.2s ease, background 0.2s ease, padding-left 0.2s ease;
+}
+
+.mobile-menu.nav-is-visible .dt-primary-nav > li > a:hover,
+.mobile-menu.nav-is-visible .dt-primary-nav > li > a:focus-visible {
+  color: #2f6b3a !important;
+  background: rgba(47, 107, 58, 0.06);
+  padding-left: 22px !important;
+  outline: none;
+}
+
+.mobile-menu.nav-is-visible .current-menu-item > a,
+.mobile-menu.nav-is-visible .current_page_item > a {
+  color: #2f6b3a !important;
+  font-weight: 600;
 }
 
 .mobile-menu-overlay.is-visible {
   z-index: 100040 !important;
   pointer-events: auto;
+  backdrop-filter: blur(2px);
 }
 
 body.nav-is-visible {
   overflow: hidden;
+}
+
+body.nav-is-visible .menu-trigger {
+  opacity: 0.45;
+  pointer-events: none;
+}
+
+/* ---- Back to top ---- */
+.pb-back-top {
+  position: fixed;
+  right: 18px;
+  bottom: 22px;
+  z-index: 100080;
+  width: 46px;
+  height: 46px;
+  border: 0;
+  border-radius: 50%;
+  background: #1a1a1a;
+  color: #fff;
+  cursor: pointer;
+  display: grid;
+  place-items: center;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: opacity 0.25s ease, transform 0.25s ease, visibility 0.25s ease, background 0.2s ease;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.18);
+}
+
+.pb-back-top.is-visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.pb-back-top:hover,
+.pb-back-top:focus-visible {
+  background: #2f6b3a;
+  outline: none;
+}
+
+.pb-back-top svg {
+  width: 18px;
+  height: 18px;
+  display: block;
 }
 
 @media (max-width: 1280px) {
@@ -55,16 +124,21 @@ body.nav-is-visible {
     cursor: pointer;
     position: relative;
     z-index: 100060;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
   }
 
-  /* Desktop primary nav is hidden by Cosma below 1280px — leave it alone */
+  .menu-trigger:focus-visible {
+    outline: 2px solid #2f6b3a;
+    outline-offset: 4px;
+  }
+
   .dt-header-menu .menu-container {
     pointer-events: none;
   }
 }
 
 @media (min-width: 1281px) {
-  /* Desktop horizontal nav must stay fully clickable */
   .dt-header-menu .menu-container,
   .dt-header-menu .dt-primary-nav,
   .dt-header-menu .dt-primary-nav a {
@@ -74,6 +148,18 @@ body.nav-is-visible {
 
   .dt-header-menu .dt-primary-nav > li > a {
     cursor: pointer;
+    transition: color 0.2s ease;
+  }
+
+  .dt-header-menu .dt-primary-nav > li > a:hover,
+  .dt-header-menu .dt-primary-nav > li > a:focus-visible {
+    color: #2f6b3a !important;
+    outline: none;
+  }
+
+  .dt-header-menu .dt-primary-nav > li.current-menu-item > a,
+  .dt-header-menu .dt-primary-nav > li.current_page_item > a {
+    color: #2f6b3a !important;
   }
 }
 
@@ -128,6 +214,13 @@ body.nav-is-visible {
 
   .animated {
     animation-fill-mode: both;
+  }
+
+  .pb-back-top {
+    right: 14px;
+    bottom: 18px;
+    width: 44px;
+    height: 44px;
   }
 }
 

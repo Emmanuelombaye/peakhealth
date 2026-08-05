@@ -5,5 +5,13 @@
     { "source": "/index.html", "destination": "/", "permanent": true },
     { "source": "/:path*/index.html", "destination": "/:path*/", "permanent": true },
     { "source": "/:path*.html", "destination": "/:path*", "permanent": true }
+  ],
+  "headers": [
+    {
+      "source": "/wp-content/uploads/peakbody/(.*)",
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+      ]
+    }
   ]
 }
