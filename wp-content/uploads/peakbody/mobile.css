@@ -412,3 +412,32 @@ body.nav-is-visible .menu-trigger {
   }
 }
 
+/* ---- Single product & WooCommerce table responsive enhancements ---- */
+@media (max-width: 767px) {
+  .product-single-container {
+    flex-direction: column !important;
+    margin: 20px auto !important;
+    gap: 24px !important;
+    padding: 0 16px !important;
+  }
+
+  .product-gallery,
+  .product-summary {
+    min-width: 0 !important;
+    width: 100% !important;
+  }
+
+  .product-title {
+    font-size: 24px !important;
+  }
+
+  .woocommerce table.shop_table,
+  .woocommerce-page table.shop_table {
+    display: block !important;
+    width: 100% !important;
+    overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch !important;
+  }
+}
+
+
