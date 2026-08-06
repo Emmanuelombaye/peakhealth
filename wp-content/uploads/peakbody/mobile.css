@@ -203,6 +203,8 @@ body.nav-is-visible .menu-trigger {
     bottom: auto !important;
     width: 100% !important;
     max-width: 100% !important;
+    height: auto !important;
+    min-height: 0 !important;
     float: none !important;
     margin: 0 !important;
     padding: 0 !important;
@@ -214,36 +216,95 @@ body.nav-is-visible .menu-trigger {
     display: none !important;
   }
 
+  /* Cosma keeps .dt-col absolute for Isotope — pull back into flow on mobile */
   .woocommerce ul.products li.product .dt-col,
   .woocommerce-page ul.products li.product .dt-col,
-  .products-apply-isotope li.product .dt-col {
+  .products-apply-isotope li.product .dt-col,
+  ul.products li.product > .dt-col {
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
     width: 100% !important;
     max-width: 100% !important;
+    height: auto !important;
     float: none !important;
     padding: 0 !important;
     margin: 0 !important;
+    transform: none !important;
   }
 
+  /* Shop page container padding so cards use full phone width */
+  body.woocommerce-shop #main > .container,
+  body.woocommerce-page #main > .container,
+  body.woocommerce-shop #primary,
+  body.woocommerce-page #primary {
+    width: 100% !important;
+    max-width: 100% !important;
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+    box-sizing: border-box !important;
+  }
+
+  .woocommerce ul.products li.product .product-wrapper,
   .product-wrapper {
     display: flex !important;
     flex-direction: column !important;
     width: 100% !important;
-    height: 100% !important;
+    height: auto !important;
     position: relative !important;
+    float: none !important;
+    clear: both !important;
     margin: 0 !important;
     padding: 12px !important;
     background: #fff;
     border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.04);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.04);
     box-sizing: border-box !important;
+    overflow: hidden;
   }
 
+  /* Keep Cosma thumb aspect-ratio (:before/:after), kill floats */
+  .woocommerce ul.products li.product .product-thumb,
   .product-wrapper .product-thumb {
     width: 100% !important;
     position: relative !important;
     float: none !important;
+    display: block !important;
+    overflow: hidden !important;
   }
 
+  .woocommerce ul.products li.product .product-thumb .image,
+  .product-wrapper .product-thumb .image {
+    position: absolute !important;
+    inset: 0 !important;
+    display: block !important;
+    float: none !important;
+    width: 100% !important;
+    height: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: hidden !important;
+  }
+
+  .woocommerce ul.products li.product .product-thumb .image .primary-image,
+  .woocommerce ul.products li.product .product-thumb .image .secondary-image,
+  .woocommerce ul.products li.product .product-thumb .image .product-thumb-overlay,
+  .product-wrapper .product-thumb .image .primary-image,
+  .product-wrapper .product-thumb .image .secondary-image,
+  .product-wrapper .product-thumb .image .product-thumb-overlay {
+    position: absolute !important;
+    inset: 0 !important;
+    width: 100% !important;
+    height: 100% !important;
+    float: none !important;
+    background-size: contain !important;
+    background-position: center center !important;
+    background-repeat: no-repeat !important;
+  }
+
+  .woocommerce ul.products li.product .product-details,
   .product-wrapper .product-details {
     width: 100% !important;
     position: relative !important;
@@ -273,12 +334,6 @@ body.nav-is-visible .menu-trigger {
     padding: 8px 16px !important;
     font-size: 13px !important;
     border-radius: 4px !important;
-  }
-
-  .product-wrapper .primary-image,
-  .product-wrapper .secondary-image {
-    background-size: contain !important;
-    background-position: center center !important;
   }
 
   .elementor-heading-title {

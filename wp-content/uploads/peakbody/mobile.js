@@ -142,5 +142,51 @@
         });
       }
     } catch (err) {}
+
+    // Neutralize Isotope absolute layout on phone/tablet (CSS grid takes over)
+    function neutralizeIsotope() {
+      if (!window.matchMedia || !window.matchMedia("(max-width: 1024px)").matches)
+        return;
+      var lists = document.querySelectorAll(
+        "ul.products, .dt-sc-product-list, .products-apply-isotope"
+      );
+      lists.forEach(function (list) {
+        list.style.removeProperty("height");
+        list.style.position = "relative";
+        list.style.height = "auto";
+        list.querySelectorAll("li.product").forEach(function (li) {
+          li.style.removeProperty("position");
+          li.style.removeProperty("top");
+          li.style.removeProperty("left");
+          li.style.removeProperty("right");
+          li.style.removeProperty("bottom");
+          li.style.removeProperty("transform");
+          li.style.removeProperty("width");
+          li.style.removeProperty("height");
+          var col = li.querySelector(".dt-col");
+          if (col) {
+            col.style.removeProperty("position");
+            col.style.removeProperty("top");
+            col.style.removeProperty("left");
+            col.style.removeProperty("width");
+            col.style.removeProperty("height");
+            col.style.position = "static";
+            col.style.width = "100%";
+            col.style.height = "auto";
+          }
+        });
+        try {
+          if (window.jQuery) {
+            var $list = window.jQuery(list);
+            if ($list.data("isotope")) $list.isotope("destroy");
+          }
+        } catch (e2) {}
+      });
+    }
+    neutralizeIsotope();
+    window.addEventListener("resize", neutralizeIsotope);
+    window.addEventListener("load", neutralizeIsotope);
+    setTimeout(neutralizeIsotope, 400);
+    setTimeout(neutralizeIsotope, 1200);
   });
 })();
