@@ -6,4 +6,5 @@ __pycache__/
 .DS_Store
 **/*.cosma.bak
 .vercel
-.env*
+config.bat
+node_modules
